@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/container_runtime
+title: 容器运行时抽象与 cAdvisor 指标采集
+scope:
+    - pkg/kubelet/container/
+    - pkg/kubelet/cadvisor/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/stats_reporting

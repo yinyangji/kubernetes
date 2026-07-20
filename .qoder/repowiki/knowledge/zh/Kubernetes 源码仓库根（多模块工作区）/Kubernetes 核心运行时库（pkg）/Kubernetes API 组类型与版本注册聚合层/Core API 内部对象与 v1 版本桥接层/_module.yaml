@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: core_runtime/api_types/core_api
+title: Core API 内部对象与 v1 版本桥接层
+scope:
+    - pkg/apis/core/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/extensions_api
+    - path: core_runtime/control_plane_orchestrators/controller_manager/node_management_controllers
+    - path: core_runtime/quota_evaluator
+    - path: core_runtime/registry_layer

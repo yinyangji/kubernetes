@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/admission_and_state
+title: 容器分配准入错误、容器映射与资源更新事件（kubelet cm 支撑包）
+scope:
+    - pkg/kubelet/cm/admission/
+    - pkg/kubelet/cm/containermap/
+    - pkg/kubelet/cm/resourceupdates/
+    - pkg/kubelet/cm/testing/
+source_files: []
+depends_on: []
+related_to: []

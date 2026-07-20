@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management
+title: Kubelet 节点资源管理子系统
+scope:
+    - pkg/kubelet/cm/
+    - pkg/kubelet/eviction/
+    - pkg/kubelet/qos/
+    - pkg/kubelet/allocation/
+source_files: []
+depends_on: []
+related_to: []

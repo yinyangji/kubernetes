@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/kubemark
+title: Kubemark 虚节点与 Hollow Kubelet 运行时
+scope:
+    - pkg/kubemark/
+source_files: []
+depends_on: []
+related_to: []

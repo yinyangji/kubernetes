@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: core_runtime/auth_authorization
+title: 认证与授权核心组件（ABAC、证书签名者授权、ServiceAccount JWT）
+scope:
+    - pkg/auth/
+    - pkg/certauthorization/
+    - pkg/serviceaccount/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/authentication_api
+    - path: core_runtime/api_types/authorization_api

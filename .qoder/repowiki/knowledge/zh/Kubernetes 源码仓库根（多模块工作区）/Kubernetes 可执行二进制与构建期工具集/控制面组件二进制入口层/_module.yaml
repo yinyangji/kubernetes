@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers
+title: 控制面组件二进制入口层
+scope:
+    - cmd/kube-apiserver/
+    - cmd/kube-controller-manager/
+    - cmd/kube-scheduler/
+source_files: []
+depends_on: []
+related_to: []

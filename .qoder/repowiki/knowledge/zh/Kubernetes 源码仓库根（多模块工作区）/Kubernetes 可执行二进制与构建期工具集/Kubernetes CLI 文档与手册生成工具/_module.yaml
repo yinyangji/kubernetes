@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/doc_generation_tools
+title: Kubernetes CLI 文档与手册生成工具
+scope:
+    - cmd/genkubedocs/
+    - cmd/gendocs/
+    - cmd/genman/
+source_files: []
+depends_on: []
+related_to: []

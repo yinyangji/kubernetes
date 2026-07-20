@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/shared_utils
+title: 核心运行时共享工具集
+scope:
+    - pkg/util/
+    - pkg/cluster/
+    - pkg/windows/
+source_files: []
+depends_on: []
+related_to: []

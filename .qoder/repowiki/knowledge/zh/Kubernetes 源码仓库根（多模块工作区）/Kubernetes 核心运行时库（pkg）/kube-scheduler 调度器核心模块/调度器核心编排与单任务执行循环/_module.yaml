@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: core_runtime/scheduler/core_orchestration
+title: 调度器核心编排与单任务执行循环
+scope:
+    - pkg/scheduler/scheduler.go
+    - pkg/scheduler/schedule_one.go
+    - pkg/scheduler/schedule_one_podgroup.go
+    - pkg/scheduler/eventhandlers.go
+    - pkg/scheduler/extender.go
+source_files: []
+depends_on: []
+related_to: []

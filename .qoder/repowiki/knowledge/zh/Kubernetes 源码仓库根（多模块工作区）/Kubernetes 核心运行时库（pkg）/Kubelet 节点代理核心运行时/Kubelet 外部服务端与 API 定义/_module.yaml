@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/server_api
+title: Kubelet 外部服务端与 API 定义
+scope:
+    - pkg/kubelet/server/
+    - pkg/kubelet/apis/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/node_services

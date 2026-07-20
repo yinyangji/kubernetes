@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins/framework_runtime
+title: 调度器框架运行时与插件生命周期管理
+scope:
+    - pkg/scheduler/framework/runtime/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/scheduler/framework_and_plugins/core_framework_api

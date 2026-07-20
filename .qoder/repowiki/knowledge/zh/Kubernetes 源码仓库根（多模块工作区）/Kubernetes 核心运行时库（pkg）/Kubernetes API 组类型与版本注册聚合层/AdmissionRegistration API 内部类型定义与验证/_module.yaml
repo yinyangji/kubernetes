@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/api_types/admissionregistration_api
+title: AdmissionRegistration API 内部类型定义与验证
+scope:
+    - pkg/apis/admissionregistration/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/admission_webhooks
+    - path: core_runtime/api_types/admission_api
+    - path: core_runtime/registry_layer

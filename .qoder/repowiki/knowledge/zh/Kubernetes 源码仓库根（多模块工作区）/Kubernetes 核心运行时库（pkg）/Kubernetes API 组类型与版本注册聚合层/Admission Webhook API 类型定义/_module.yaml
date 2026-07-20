@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/api_types/admission_api
+title: Admission Webhook API 类型定义
+scope:
+    - pkg/apis/admission/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/admission_webhooks
+    - path: core_runtime/api_types/admissionregistration_api

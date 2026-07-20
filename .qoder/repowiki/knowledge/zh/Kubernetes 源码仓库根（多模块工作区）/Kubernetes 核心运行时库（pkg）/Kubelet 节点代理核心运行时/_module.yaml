@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent
+title: Kubelet 节点代理核心运行时
+scope:
+    - pkg/kubelet/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/node_agents/kubelet
+    - path: core_runtime/proxy
+    - path: core_runtime/volume_plugins

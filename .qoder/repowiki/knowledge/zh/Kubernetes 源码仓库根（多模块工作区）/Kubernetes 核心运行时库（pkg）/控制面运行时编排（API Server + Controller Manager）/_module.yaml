@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators
+title: 控制面运行时编排（API Server + Controller Manager）
+scope:
+    - pkg/controlplane/
+    - pkg/kubeapiserver/
+    - pkg/controller/
+source_files: []
+depends_on: []
+related_to: []

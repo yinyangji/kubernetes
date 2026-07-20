@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/storagemigration_api
+title: 存储版本迁移 API 类型定义
+scope:
+    - pkg/apis/storagemigration/
+source_files: []
+depends_on: []
+related_to: []

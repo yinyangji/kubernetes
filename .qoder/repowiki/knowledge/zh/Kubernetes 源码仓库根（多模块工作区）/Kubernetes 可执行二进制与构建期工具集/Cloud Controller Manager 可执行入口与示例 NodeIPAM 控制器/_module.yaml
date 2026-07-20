@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cli_and_build_tools/cloud_controller_manager
+title: Cloud Controller Manager 可执行入口与示例 NodeIPAM 控制器
+scope:
+    - cmd/cloud-controller-manager/
+source_files: []
+depends_on: []
+related_to: []

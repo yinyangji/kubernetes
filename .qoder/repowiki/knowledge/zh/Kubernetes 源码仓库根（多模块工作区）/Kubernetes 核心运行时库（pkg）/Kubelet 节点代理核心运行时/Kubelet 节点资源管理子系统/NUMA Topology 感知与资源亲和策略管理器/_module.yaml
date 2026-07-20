@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/topology_manager
+title: NUMA Topology 感知与资源亲和策略管理器
+scope:
+    - pkg/kubelet/cm/topologymanager/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core

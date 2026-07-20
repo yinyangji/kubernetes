@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/proxy/proxy_backends/ipvs_backend
+title: IPVS 模式 kube-proxy 后端实现
+scope:
+    - pkg/proxy/ipvs/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/proxy/proxy_shared

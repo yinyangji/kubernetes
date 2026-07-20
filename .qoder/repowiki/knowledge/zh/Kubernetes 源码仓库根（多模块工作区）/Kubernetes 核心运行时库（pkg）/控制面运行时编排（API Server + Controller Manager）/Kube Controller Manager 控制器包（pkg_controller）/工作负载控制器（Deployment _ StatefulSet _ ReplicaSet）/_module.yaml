@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/workload_controllers
+title: 工作负载控制器（Deployment / StatefulSet / ReplicaSet）
+scope:
+    - pkg/controller/deployment/
+    - pkg/controller/statefulset/
+    - pkg/controller/replicaset/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/apps_api

@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/plugin_manager
+title: Kubelet 外部插件管理器（Plugin Manager）
+scope:
+    - pkg/kubelet/pluginmanager/
+source_files: []
+depends_on: []
+related_to: []

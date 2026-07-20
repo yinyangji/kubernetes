@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util/fs_helpers
+title: 卷路径与文件系统辅助工具
+scope:
+    - pkg/volume/util/fs/
+    - pkg/volume/util/volumepathhandler/
+source_files: []
+depends_on: []
+related_to: []

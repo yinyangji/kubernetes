@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins/api_calls
+title: 调度器框架内置 API 调用实现
+scope:
+    - pkg/scheduler/framework/api_calls/
+source_files: []
+depends_on: []
+related_to: []

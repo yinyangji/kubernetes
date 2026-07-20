@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_framework_and_utils
+title: 控制器框架与注册工具
+scope:
+    - cmd/kube-controller-manager/app/controller_descriptor.go
+    - cmd/kube-controller-manager/app/controller_utils.go
+    - cmd/kube-controller-manager/app/import_known_versions.go
+source_files: []
+depends_on: []
+related_to: []

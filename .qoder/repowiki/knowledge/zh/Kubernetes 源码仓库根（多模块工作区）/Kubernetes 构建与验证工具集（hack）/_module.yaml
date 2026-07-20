@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: build_tooling
+title: Kubernetes 构建与验证工具集（hack）
+scope:
+    - hack/
+source_files: []
+depends_on: []
+related_to: []

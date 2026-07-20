@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm/preflight_checks
+title: kubeadm 预检查（Preflight Checks）框架
+scope:
+    - cmd/kubeadm/app/preflight/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/cli_tools/kubeadm/componentconfigs_and_discovery

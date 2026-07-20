@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/metrics
+title: 调度器指标定义与采集层
+scope:
+    - pkg/scheduler/metrics/
+source_files: []
+depends_on: []
+related_to: []

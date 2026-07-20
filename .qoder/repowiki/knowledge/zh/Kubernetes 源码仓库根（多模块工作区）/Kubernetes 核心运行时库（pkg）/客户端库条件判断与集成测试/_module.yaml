@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/client_library
+title: 客户端库条件判断与集成测试
+scope:
+    - pkg/client/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/api_types/apps_api
+title: apps API 组内部类型与版本转换
+scope:
+    - pkg/apis/apps/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/workload_controllers
+    - path: core_runtime/registry_layer

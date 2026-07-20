@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/cpu_manager
+title: Kubelet CPU Manager（CPU 独占分配与拓扑感知）
+scope:
+    - pkg/kubelet/cm/cpumanager/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core

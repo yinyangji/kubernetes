@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/config_api
+title: KubeScheduler 组件配置 API（内部类型与版本桥接）
+scope:
+    - pkg/scheduler/apis/config/
+source_files: []
+depends_on: []
+related_to: []

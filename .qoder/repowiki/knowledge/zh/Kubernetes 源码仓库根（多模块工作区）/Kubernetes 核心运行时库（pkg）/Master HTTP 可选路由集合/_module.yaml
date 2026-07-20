@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/routes
+title: Master HTTP 可选路由集合
+scope:
+    - pkg/routes/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/scheduling_api
+title: 调度 API 组 (scheduling.k8s.io) 类型定义与注册
+scope:
+    - pkg/apis/scheduling/
+source_files: []
+depends_on: []
+related_to: []

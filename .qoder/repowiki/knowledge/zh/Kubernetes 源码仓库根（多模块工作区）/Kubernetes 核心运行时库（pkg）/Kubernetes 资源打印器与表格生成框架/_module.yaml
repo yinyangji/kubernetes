@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/printers
+title: Kubernetes 资源打印器与表格生成框架
+scope:
+    - pkg/printers/
+source_files: []
+depends_on: []
+related_to: []

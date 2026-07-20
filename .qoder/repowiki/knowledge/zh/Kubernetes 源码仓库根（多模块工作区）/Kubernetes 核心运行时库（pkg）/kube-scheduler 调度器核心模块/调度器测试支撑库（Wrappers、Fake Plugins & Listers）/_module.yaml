@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/testing_support
+title: 调度器测试支撑库（Wrappers、Fake Plugins & Listers）
+scope:
+    - pkg/scheduler/testing/
+source_files: []
+depends_on: []
+related_to: []

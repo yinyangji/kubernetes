@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/batch_workload_controllers
+title: 批处理工作负载控制器（Job、CronJob、DaemonSet）
+scope:
+    - pkg/controller/job/
+    - pkg/controller/cronjob/
+    - pkg/controller/daemon/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/batch_api

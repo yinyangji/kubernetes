@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/features_flags
+title: 运行时特性开关与能力/字段路径工具
+scope:
+    - pkg/features/
+    - pkg/capabilities/
+    - pkg/fieldpath/
+source_files: []
+depends_on: []
+related_to: []

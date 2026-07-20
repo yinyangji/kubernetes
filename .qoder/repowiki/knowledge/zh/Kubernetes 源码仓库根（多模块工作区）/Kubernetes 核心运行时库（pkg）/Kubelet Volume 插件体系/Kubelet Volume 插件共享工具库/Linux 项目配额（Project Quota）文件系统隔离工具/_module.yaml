@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util/fsquota
+title: Linux 项目配额（Project Quota）文件系统隔离工具
+scope:
+    - pkg/volume/util/fsquota/
+source_files: []
+depends_on: []
+related_to: []

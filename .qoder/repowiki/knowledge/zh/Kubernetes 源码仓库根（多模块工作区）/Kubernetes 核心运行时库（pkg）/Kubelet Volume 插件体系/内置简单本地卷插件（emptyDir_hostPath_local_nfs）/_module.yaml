@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/simple_local_plugins
+title: 内置简单本地卷插件（emptyDir/hostPath/local/nfs）
+scope:
+    - pkg/volume/emptydir/
+    - pkg/volume/hostpath/
+    - pkg/volume/local/
+    - pkg/volume/nfs/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/shared_util

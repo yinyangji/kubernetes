@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/apidiscovery_api
+title: API Discovery 资源类型定义与版本注册
+scope:
+    - pkg/apis/apidiscovery/
+source_files: []
+depends_on: []
+related_to: []

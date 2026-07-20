@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/yaml_and_template_tools
+title: YAML 与模板生成工具集
+scope:
+    - cmd/genyaml/
+    - cmd/gotemplate/
+    - cmd/prune-junit-xml/
+source_files: []
+depends_on: []
+related_to: []

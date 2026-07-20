@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/resource_policy_controllers
+title: 资源配额与动态资源分配控制器
+scope:
+    - pkg/controller/resourcequota/
+    - pkg/controller/resourceclaim/
+    - pkg/controller/resourcepoolstatusrequest/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/resource_api

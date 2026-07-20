@@ -1,0 +1,23 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/node_services
+title: Kubelet 节点运行时服务集合
+scope:
+    - pkg/kubelet/status/
+    - pkg/kubelet/nodestatus/
+    - pkg/kubelet/metrics/
+    - pkg/kubelet/events/
+    - pkg/kubelet/sysctl/
+    - pkg/kubelet/token/
+    - pkg/kubelet/secret/
+    - pkg/kubelet/configmap/
+    - pkg/kubelet/clustertrustbundle/
+    - pkg/kubelet/podcertificate/
+    - pkg/kubelet/runtimeclass/
+    - pkg/kubelet/watchdog/
+    - pkg/kubelet/userns/
+    - pkg/kubelet/nodeshutdown/
+    - pkg/kubelet/oom/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/server_api

@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm/componentconfigs_and_discovery
+title: 组件配置与节点发现（ComponentConfig & Discovery）
+scope:
+    - cmd/kubeadm/app/componentconfigs/
+    - cmd/kubeadm/app/discovery/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/cli_tools/kubeadm/preflight_checks

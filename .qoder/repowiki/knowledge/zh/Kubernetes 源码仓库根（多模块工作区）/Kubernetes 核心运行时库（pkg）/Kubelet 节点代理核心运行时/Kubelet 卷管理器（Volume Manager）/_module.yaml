@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/volume_manager
+title: Kubelet 卷管理器（Volume Manager）
+scope:
+    - pkg/kubelet/volumemanager/
+source_files: []
+depends_on: []
+related_to: []

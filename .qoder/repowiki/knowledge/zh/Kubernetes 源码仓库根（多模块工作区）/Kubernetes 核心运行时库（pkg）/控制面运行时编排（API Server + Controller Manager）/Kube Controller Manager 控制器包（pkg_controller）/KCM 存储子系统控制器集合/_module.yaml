@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem
+title: KCM 存储子系统控制器集合
+scope:
+    - pkg/controller/volume/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/storage_api

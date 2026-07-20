@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/flexvolume_plugin
+title: FlexVolume 动态插件桥接层
+scope:
+    - pkg/volume/flexvolume/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/shared_util

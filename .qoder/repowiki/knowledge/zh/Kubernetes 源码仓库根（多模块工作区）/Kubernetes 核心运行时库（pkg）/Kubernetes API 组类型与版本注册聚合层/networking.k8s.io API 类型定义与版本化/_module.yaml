@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/networking_api
+title: networking.k8s.io API 类型定义与版本化
+scope:
+    - pkg/apis/networking/
+source_files: []
+depends_on: []
+related_to: []

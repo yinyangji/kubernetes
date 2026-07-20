@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/csi_plugin
+title: Kubelet CSI 卷插件与迁移桥接
+scope:
+    - pkg/volume/csi/
+    - pkg/volume/csimigration/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/shared_util

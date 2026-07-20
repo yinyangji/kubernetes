@@ -1,0 +1,20 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/container_manager_core
+title: 容器与 cgroup 资源管理器核心
+scope:
+    - pkg/kubelet/cm/container_manager.go
+    - pkg/kubelet/cm/cgroup_manager_linux.go
+    - pkg/kubelet/cm/internal_container_lifecycle.go
+    - pkg/kubelet/cm/pod_container_manager_linux.go
+    - pkg/kubelet/cm/node_container_manager_linux.go
+    - pkg/kubelet/cm/qos_container_manager_linux.go
+    - pkg/kubelet/cm/helpers.go
+    - pkg/kubelet/cm/types.go
+    - pkg/kubelet/cm/doc.go
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/resource_management/cgroup_manager
+    - path: core_runtime/kubelet_node_agent/resource_management/cpu_manager
+    - path: core_runtime/kubelet_node_agent/resource_management/memory_manager
+    - path: core_runtime/kubelet_node_agent/resource_management/topology_manager

@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/events_api
+title: events API 组适配层（events.k8s.io）
+scope:
+    - pkg/apis/events/
+source_files: []
+depends_on: []
+related_to: []

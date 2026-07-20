@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm
+title: kubeadm CLI 入口与编排层
+scope:
+    - cmd/kubeadm/
+source_files: []
+depends_on: []
+related_to: []

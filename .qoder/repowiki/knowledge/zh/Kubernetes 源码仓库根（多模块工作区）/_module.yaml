@@ -1,0 +1,25 @@
+schema_version: 1
+module_path: ""
+title: Kubernetes 源码仓库根（多模块工作区）
+scope:
+    - README.md
+    - CONTRIBUTING.md
+    - .gitignore
+    - go.mod
+    - go.sum
+    - go.work
+    - go.work.sum
+    - .import-restrictions
+    - SUPPORT.md
+    - code-of-conduct.md
+    - AGENTS.md
+    - .generated_files
+    - .gitattributes
+    - .go-version
+    - LICENSE
+    - OWNERS
+    - OWNERS_ALIASES
+    - SECURITY_CONTACTS
+source_files: []
+depends_on: []
+related_to: []

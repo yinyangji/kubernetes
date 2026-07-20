@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins
+title: 调度器框架与内置插件集合
+scope:
+    - pkg/scheduler/framework/
+source_files: []
+depends_on: []
+related_to: []

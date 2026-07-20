@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/api_helpers_and_legacy
+title: API 类型辅助函数与遗留兼容层
+scope:
+    - pkg/api/
+source_files: []
+depends_on: []
+related_to: []

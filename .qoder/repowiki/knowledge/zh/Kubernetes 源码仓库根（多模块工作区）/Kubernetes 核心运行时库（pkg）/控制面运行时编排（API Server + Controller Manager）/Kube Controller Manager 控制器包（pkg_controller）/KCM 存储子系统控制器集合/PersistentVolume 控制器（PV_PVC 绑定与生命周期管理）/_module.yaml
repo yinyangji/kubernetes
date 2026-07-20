@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume
+title: PersistentVolume 控制器（PV/PVC 绑定与生命周期管理）
+scope:
+    - pkg/controller/volume/persistentvolume/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/attachdetach
+    - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/ephemeral

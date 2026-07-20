@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/controller_framework
+title: 控制器管理器配置 API 与通用工具库
+scope:
+    - pkg/controller/apis/
+    - pkg/controller/util/
+    - pkg/controller/testutil/
+source_files: []
+depends_on: []
+related_to: []

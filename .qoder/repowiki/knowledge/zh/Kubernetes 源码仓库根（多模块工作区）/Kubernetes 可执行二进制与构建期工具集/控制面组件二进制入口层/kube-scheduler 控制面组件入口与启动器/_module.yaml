@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers/kube_scheduler
+title: kube-scheduler 控制面组件入口与启动器
+scope:
+    - cmd/kube-scheduler/
+source_files: []
+depends_on: []
+related_to: []

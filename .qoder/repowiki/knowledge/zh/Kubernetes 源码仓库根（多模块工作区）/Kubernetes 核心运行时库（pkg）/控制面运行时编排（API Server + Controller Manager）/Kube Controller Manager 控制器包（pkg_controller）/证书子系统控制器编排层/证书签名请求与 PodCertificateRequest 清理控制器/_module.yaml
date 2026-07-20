@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/cleaner
+title: 证书签名请求与 PodCertificateRequest 清理控制器
+scope:
+    - pkg/controller/certificates/cleaner/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/clustertrustbundle_publisher

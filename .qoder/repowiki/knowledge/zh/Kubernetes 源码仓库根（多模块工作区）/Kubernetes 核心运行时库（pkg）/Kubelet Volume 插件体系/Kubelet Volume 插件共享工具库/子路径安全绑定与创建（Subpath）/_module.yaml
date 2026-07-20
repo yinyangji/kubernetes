@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util/subpath
+title: 子路径安全绑定与创建（Subpath）
+scope:
+    - pkg/volume/util/subpath/
+source_files: []
+depends_on: []
+related_to: []

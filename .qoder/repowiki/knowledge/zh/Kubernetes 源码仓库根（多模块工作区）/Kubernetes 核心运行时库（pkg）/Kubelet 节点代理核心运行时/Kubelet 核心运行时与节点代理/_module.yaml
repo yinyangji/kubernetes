@@ -1,0 +1,21 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/kubelet_core
+title: Kubelet 核心运行时与节点代理
+scope:
+    - pkg/kubelet/kubelet.go
+    - pkg/kubelet/kubelet_*.go
+    - pkg/kubelet/pod_workers.go
+    - pkg/kubelet/pod_container_deletor.go
+    - pkg/kubelet/volume_host.go
+    - pkg/kubelet/runtime.go
+    - pkg/kubelet/errors.go
+    - pkg/kubelet/reason_cache.go
+    - pkg/kubelet/active_deadline.go
+    - pkg/kubelet/preemption/
+    - pkg/kubelet/checkpointmanager/
+    - pkg/kubelet/client/
+    - pkg/kubelet/certificate/
+    - pkg/kubelet/util/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm/shared_utilities
+title: kubeadm 共享工具、常量与特性门控
+scope:
+    - cmd/kubeadm/app/util/
+    - cmd/kubeadm/app/constants/
+    - cmd/kubeadm/app/features/
+    - cmd/kubeadm/app/images/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/cli_tools/kubeadm/upgrade_commands

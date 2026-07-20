@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/config_and_types
+title: Kubelet 配置源与类型定义
+scope:
+    - pkg/kubelet/config/
+    - pkg/kubelet/kubeletconfig/
+    - pkg/kubelet/types/
+    - pkg/kubelet/envvars/
+source_files: []
+depends_on: []
+related_to: []

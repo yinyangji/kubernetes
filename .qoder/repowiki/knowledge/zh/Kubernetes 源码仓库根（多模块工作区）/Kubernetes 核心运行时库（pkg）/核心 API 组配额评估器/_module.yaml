@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/quota_evaluator
+title: 核心 API 组配额评估器
+scope:
+    - pkg/quota/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/core_api

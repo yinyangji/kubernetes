@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers/kube_apiserver
+title: kube-apiserver 可执行入口与启动装配层
+scope:
+    - cmd/kube-apiserver/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/apiserver_bootstrap

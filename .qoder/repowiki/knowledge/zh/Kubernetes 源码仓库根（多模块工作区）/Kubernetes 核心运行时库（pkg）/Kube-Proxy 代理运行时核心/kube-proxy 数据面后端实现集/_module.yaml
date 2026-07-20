@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/proxy/proxy_backends
+title: kube-proxy 数据面后端实现集
+scope:
+    - pkg/proxy/iptables/
+    - pkg/proxy/ipvs/
+    - pkg/proxy/nftables/
+    - pkg/proxy/winkernel/
+source_files: []
+depends_on: []
+related_to: []

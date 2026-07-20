@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm/apis
+title: kubeadm 配置 API 与版本编解码
+scope:
+    - cmd/kubeadm/app/apis/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/cli_tools/kubeadm/cmd_phases

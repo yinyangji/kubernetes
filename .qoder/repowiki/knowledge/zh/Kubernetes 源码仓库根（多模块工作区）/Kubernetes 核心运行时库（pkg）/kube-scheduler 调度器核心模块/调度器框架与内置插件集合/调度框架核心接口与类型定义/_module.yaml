@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins/core_framework_api
+title: 调度框架核心接口与类型定义
+scope:
+    - pkg/scheduler/framework/interface.go
+    - pkg/scheduler/framework/types.go
+    - pkg/scheduler/framework/cycle_state.go
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/scheduler/framework_and_plugins/framework_runtime
+    - path: core_runtime/scheduler/framework_and_plugins/plugins_registry
+    - path: core_runtime/scheduler/framework_and_plugins/preemption_engine

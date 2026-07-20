@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/api_types/abac_api
+title: ABAC 授权 API 类型定义与版本转换
+scope:
+    - pkg/apis/abac/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/authorization_api

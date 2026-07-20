@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/autoscaling_api
+title: Autoscaling API 类型与版本转换层
+scope:
+    - pkg/apis/autoscaling/
+source_files: []
+depends_on: []
+related_to: []

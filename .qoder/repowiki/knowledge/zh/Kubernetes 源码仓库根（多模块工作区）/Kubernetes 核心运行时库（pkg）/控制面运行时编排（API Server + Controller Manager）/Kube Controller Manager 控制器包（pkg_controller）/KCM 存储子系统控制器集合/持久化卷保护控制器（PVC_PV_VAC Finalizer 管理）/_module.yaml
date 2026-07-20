@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/protection_controllers
+title: 持久化卷保护控制器（PVC/PV/VAC Finalizer 管理）
+scope:
+    - pkg/controller/volume/pvcprotection/
+    - pkg/controller/volume/pvprotection/
+    - pkg/controller/volume/vacprotection/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/misc_controllers
+title: 命名空间清理、Pod 中断预算与 ControllerRevision 历史管理控制器
+scope:
+    - pkg/controller/namespace/
+    - pkg/controller/disruption/
+    - pkg/controller/history/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/eviction
+title: 节点资源回收与驱逐管理器
+scope:
+    - pkg/kubelet/eviction/
+source_files: []
+depends_on: []
+related_to: []

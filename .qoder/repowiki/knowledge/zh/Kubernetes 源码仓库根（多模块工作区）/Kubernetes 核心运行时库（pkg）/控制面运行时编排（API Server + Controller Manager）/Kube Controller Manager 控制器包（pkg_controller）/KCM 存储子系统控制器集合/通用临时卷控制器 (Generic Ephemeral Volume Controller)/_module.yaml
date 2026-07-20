@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/ephemeral
+title: 通用临时卷控制器 (Generic Ephemeral Volume Controller)
+scope:
+    - pkg/controller/volume/ephemeral/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume

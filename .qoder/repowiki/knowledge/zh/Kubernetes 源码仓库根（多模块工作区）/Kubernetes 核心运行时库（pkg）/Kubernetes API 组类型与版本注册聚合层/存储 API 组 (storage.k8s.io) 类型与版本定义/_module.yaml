@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/api_types/storage_api
+title: 存储 API 组 (storage.k8s.io) 类型与版本定义
+scope:
+    - pkg/apis/storage/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem
+    - path: core_runtime/registry_layer

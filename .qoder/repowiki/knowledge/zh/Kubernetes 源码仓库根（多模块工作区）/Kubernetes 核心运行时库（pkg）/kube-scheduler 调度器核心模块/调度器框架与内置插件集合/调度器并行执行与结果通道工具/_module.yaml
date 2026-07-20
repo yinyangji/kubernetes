@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins/parallelize
+title: 调度器并行执行与结果通道工具
+scope:
+    - pkg/scheduler/framework/parallelize/
+source_files: []
+depends_on: []
+related_to: []

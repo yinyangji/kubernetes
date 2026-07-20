@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/metrics_and_validation
+title: 卷指标采集与 PV 校验
+scope:
+    - pkg/volume/metrics_*.go
+    - pkg/volume/validation/
+source_files: []
+depends_on: []
+related_to: []

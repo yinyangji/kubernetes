@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/authority_signer_approver
+title: 证书签发链：CSR 审批、签名与 CA 策略
+scope:
+    - pkg/controller/certificates/authority/
+    - pkg/controller/certificates/signer/
+    - pkg/controller/certificates/approver/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/rootca_publisher

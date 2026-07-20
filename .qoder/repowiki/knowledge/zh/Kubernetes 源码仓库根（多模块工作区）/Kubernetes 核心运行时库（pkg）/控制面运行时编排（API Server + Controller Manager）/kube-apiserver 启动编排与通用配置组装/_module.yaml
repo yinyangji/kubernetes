@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/apiserver_bootstrap
+title: kube-apiserver 启动编排与通用配置组装
+scope:
+    - pkg/controlplane/apiserver/
+    - pkg/kubeapiserver/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/control_plane_servers/kube_apiserver
+    - path: core_runtime/api_types
+    - path: core_runtime/registry_layer

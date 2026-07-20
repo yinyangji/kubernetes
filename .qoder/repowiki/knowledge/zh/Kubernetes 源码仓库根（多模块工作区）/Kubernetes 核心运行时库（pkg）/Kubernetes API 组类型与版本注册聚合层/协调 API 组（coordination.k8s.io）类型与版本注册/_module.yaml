@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/coordination_api
+title: 协调 API 组（coordination.k8s.io）类型与版本注册
+scope:
+    - pkg/apis/coordination/
+source_files: []
+depends_on: []
+related_to: []

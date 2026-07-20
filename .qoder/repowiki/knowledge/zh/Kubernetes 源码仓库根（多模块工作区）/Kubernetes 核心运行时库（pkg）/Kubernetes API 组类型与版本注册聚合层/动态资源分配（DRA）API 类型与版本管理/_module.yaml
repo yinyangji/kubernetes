@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/api_types/resource_api
+title: 动态资源分配（DRA）API 类型与版本管理
+scope:
+    - pkg/apis/resource/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/resource_policy_controllers

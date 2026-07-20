@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager
+title: Kube Controller Manager 控制器包（pkg/controller）
+scope:
+    - pkg/controller/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/control_plane_servers/kube_controller_manager
+    - path: core_runtime/api_types

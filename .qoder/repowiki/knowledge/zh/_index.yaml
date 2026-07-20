@@ -1,0 +1,1950 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: master
+nodes_managed: true
+exported_at: "2026-07-19T16:36:53Z"
+modules:
+    "":
+        dir_name: Kubernetes 源码仓库根（多模块工作区）
+        title: Kubernetes 源码仓库根（多模块工作区）
+        scope:
+            - README.md
+            - CONTRIBUTING.md
+            - .gitignore
+            - go.mod
+            - go.sum
+            - go.work
+            - go.work.sum
+            - .import-restrictions
+            - SUPPORT.md
+            - code-of-conduct.md
+            - AGENTS.md
+            - .generated_files
+            - .gitattributes
+            - .go-version
+            - LICENSE
+            - OWNERS
+            - OWNERS_ALIASES
+            - SECURITY_CONTACTS
+        source_files: []
+        children:
+            - api_specs
+            - build_tooling
+            - cli_and_build_tools
+            - cluster_scripts
+            - core_runtime
+            - staged_libraries
+            - tests
+        depends_on: []
+        related_to: []
+    api_specs:
+        dir_name: Kubernetes API 规范与发现文档
+        title: Kubernetes API 规范与发现文档
+        scope:
+            - api/
+            - docs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    build_tooling:
+        dir_name: Kubernetes 构建与验证工具集（hack）
+        title: Kubernetes 构建与验证工具集（hack）
+        scope:
+            - hack/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools:
+        dir_name: Kubernetes 可执行二进制与构建期工具集
+        title: Kubernetes 可执行二进制与构建期工具集
+        scope:
+            - cmd/
+        source_files: []
+        children:
+            - cli_and_build_tools/build_and_check_utils
+            - cli_and_build_tools/cli_tools
+            - cli_and_build_tools/cloud_controller_manager
+            - cli_and_build_tools/control_plane_servers
+            - cli_and_build_tools/doc_generation_tools
+            - cli_and_build_tools/import_policy_tools
+            - cli_and_build_tools/misc_build_helpers
+            - cli_and_build_tools/node_agents
+            - cli_and_build_tools/yaml_and_template_tools
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/build_and_check_utils:
+        dir_name: 构建与依赖检查工具集
+        title: 构建与依赖检查工具集
+        scope:
+            - cmd/clicheck/
+            - cmd/dependencycheck/
+            - cmd/dependencyverifier/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/cli_tools:
+        dir_name: Kubernetes CLI 工具集
+        title: Kubernetes CLI 工具集
+        scope:
+            - cmd/kubectl/
+            - cmd/kubectl-convert/
+            - cmd/kubeadm/
+        source_files: []
+        children:
+            - cli_and_build_tools/cli_tools/kubeadm
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/cli_tools/kubeadm:
+        dir_name: kubeadm CLI 入口与编排层
+        title: kubeadm CLI 入口与编排层
+        scope:
+            - cmd/kubeadm/
+        source_files: []
+        children:
+            - cli_and_build_tools/cli_tools/kubeadm/apis
+            - cli_and_build_tools/cli_tools/kubeadm/cmd_phases
+            - cli_and_build_tools/cli_tools/kubeadm/componentconfigs_and_discovery
+            - cli_and_build_tools/cli_tools/kubeadm/preflight_checks
+            - cli_and_build_tools/cli_tools/kubeadm/shared_utilities
+            - cli_and_build_tools/cli_tools/kubeadm/upgrade_commands
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/cli_tools/kubeadm/apis:
+        dir_name: kubeadm 配置 API 与版本编解码
+        title: kubeadm 配置 API 与版本编解码
+        scope:
+            - cmd/kubeadm/app/apis/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/cmd_phases
+    cli_and_build_tools/cli_tools/kubeadm/cmd_phases:
+        dir_name: kubeadm 工作流阶段与命令选项框架
+        title: kubeadm 工作流阶段与命令选项框架
+        scope:
+            - cmd/kubeadm/app/cmd/phases/
+            - cmd/kubeadm/app/cmd/options/
+            - cmd/kubeadm/app/cmd/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/apis
+    cli_and_build_tools/cli_tools/kubeadm/componentconfigs_and_discovery:
+        dir_name: 组件配置与节点发现（ComponentConfig & Discovery）
+        title: 组件配置与节点发现（ComponentConfig & Discovery）
+        scope:
+            - cmd/kubeadm/app/componentconfigs/
+            - cmd/kubeadm/app/discovery/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/preflight_checks
+    cli_and_build_tools/cli_tools/kubeadm/preflight_checks:
+        dir_name: kubeadm 预检查（Preflight Checks）框架
+        title: kubeadm 预检查（Preflight Checks）框架
+        scope:
+            - cmd/kubeadm/app/preflight/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/componentconfigs_and_discovery
+    cli_and_build_tools/cli_tools/kubeadm/shared_utilities:
+        dir_name: kubeadm 共享工具、常量与特性门控
+        title: kubeadm 共享工具、常量与特性门控
+        scope:
+            - cmd/kubeadm/app/util/
+            - cmd/kubeadm/app/constants/
+            - cmd/kubeadm/app/features/
+            - cmd/kubeadm/app/images/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/upgrade_commands
+    cli_and_build_tools/cli_tools/kubeadm/upgrade_commands:
+        dir_name: kubeadm upgrade 命令与升级阶段实现
+        title: kubeadm upgrade 命令与升级阶段实现
+        scope:
+            - cmd/kubeadm/app/cmd/upgrade/
+            - cmd/kubeadm/app/phases/upgrade/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/cli_tools/kubeadm/shared_utilities
+    cli_and_build_tools/cloud_controller_manager:
+        dir_name: Cloud Controller Manager 可执行入口与示例 NodeIPAM 控制器
+        title: Cloud Controller Manager 可执行入口与示例 NodeIPAM 控制器
+        scope:
+            - cmd/cloud-controller-manager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers:
+        dir_name: 控制面组件二进制入口层
+        title: 控制面组件二进制入口层
+        scope:
+            - cmd/kube-apiserver/
+            - cmd/kube-controller-manager/
+            - cmd/kube-scheduler/
+        source_files: []
+        children:
+            - cli_and_build_tools/control_plane_servers/kube_apiserver
+            - cli_and_build_tools/control_plane_servers/kube_controller_manager
+            - cli_and_build_tools/control_plane_servers/kube_scheduler
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_apiserver:
+        dir_name: kube-apiserver 可执行入口与启动装配层
+        title: kube-apiserver 可执行入口与启动装配层
+        scope:
+            - cmd/kube-apiserver/
+        source_files: []
+        children:
+            - cli_and_build_tools/control_plane_servers/kube_apiserver/options_validation
+            - cli_and_build_tools/control_plane_servers/kube_apiserver/server_bootstrap
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/apiserver_bootstrap
+    cli_and_build_tools/control_plane_servers/kube_apiserver/options_validation:
+        dir_name: kube-apiserver 启动选项定义、补全与校验
+        title: kube-apiserver 启动选项定义、补全与校验
+        scope:
+            - cmd/kube-apiserver/app/options/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_apiserver/server_bootstrap:
+        dir_name: kube-apiserver 启动引导与服务器链装配
+        title: kube-apiserver 启动引导与服务器链装配
+        scope:
+            - cmd/kube-apiserver/app/server.go
+            - cmd/kube-apiserver/app/config.go
+            - cmd/kube-apiserver/app/aggregator.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_controller_manager:
+        dir_name: kube-controller-manager 控制器管理器
+        title: kube-controller-manager 控制器管理器
+        scope:
+            - cmd/kube-controller-manager/
+        source_files: []
+        children:
+            - cli_and_build_tools/control_plane_servers/kube_controller_manager/admission_and_plugins
+            - cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_bootstrap_and_options
+            - cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_framework_and_utils
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager
+    cli_and_build_tools/control_plane_servers/kube_controller_manager/admission_and_plugins:
+        dir_name: KCM 控制器插件注册与发现
+        title: KCM 控制器插件注册与发现
+        scope:
+            - cmd/kube-controller-manager/app/plugins.go
+            - cmd/kube-controller-manager/app/discovery.go
+            - cmd/kube-controller-manager/app/validatingadmissionpolicystatus.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_bootstrap_and_options:
+        dir_name: kube-controller-manager 启动引导与控制器选项
+        title: kube-controller-manager 启动引导与控制器选项
+        scope:
+            - cmd/kube-controller-manager/app/bootstrap.go
+            - cmd/kube-controller-manager/app/controllermanager.go
+            - cmd/kube-controller-manager/app/options/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_framework_and_utils:
+        dir_name: 控制器框架与注册工具
+        title: 控制器框架与注册工具
+        scope:
+            - cmd/kube-controller-manager/app/controller_descriptor.go
+            - cmd/kube-controller-manager/app/controller_utils.go
+            - cmd/kube-controller-manager/app/import_known_versions.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/control_plane_servers/kube_scheduler:
+        dir_name: kube-scheduler 控制面组件入口与启动器
+        title: kube-scheduler 控制面组件入口与启动器
+        scope:
+            - cmd/kube-scheduler/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/doc_generation_tools:
+        dir_name: Kubernetes CLI 文档与手册生成工具
+        title: Kubernetes CLI 文档与手册生成工具
+        scope:
+            - cmd/genkubedocs/
+            - cmd/gendocs/
+            - cmd/genman/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/import_policy_tools:
+        dir_name: 导入策略与别名校验工具集
+        title: 导入策略与别名校验工具集
+        scope:
+            - cmd/import-boss/
+            - cmd/importverifier/
+            - cmd/preferredimports/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/misc_build_helpers:
+        dir_name: 构建期辅助工具集（字段文档检查、特性门控生成、Swagger 文档生成）
+        title: 构建期辅助工具集（字段文档检查、特性门控生成、Swagger 文档生成）
+        scope:
+            - cmd/fieldnamedocscheck/
+            - cmd/genfeaturegates/
+            - cmd/genswaggertypedocs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/node_agents:
+        dir_name: Kubernetes 节点侧可执行入口（kubelet _ kubemark）
+        title: Kubernetes 节点侧可执行入口（kubelet / kubemark）
+        scope:
+            - cmd/kubelet/
+            - cmd/kubemark/
+        source_files: []
+        children:
+            - cli_and_build_tools/node_agents/kubelet
+            - cli_and_build_tools/node_agents/kubemark_hollow_node
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/node_agents/kubelet:
+        dir_name: Kubelet 节点代理二进制入口与启动编排
+        title: Kubelet 节点代理二进制入口与启动编排
+        scope:
+            - cmd/kubelet/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent
+    cli_and_build_tools/node_agents/kubemark_hollow_node:
+        dir_name: Kubemark Hollow Node 可执行入口
+        title: Kubemark Hollow Node 可执行入口
+        scope:
+            - cmd/kubemark/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cli_and_build_tools/yaml_and_template_tools:
+        dir_name: YAML 与模板生成工具集
+        title: YAML 与模板生成工具集
+        scope:
+            - cmd/genyaml/
+            - cmd/gotemplate/
+            - cmd/prune-junit-xml/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    cluster_scripts:
+        dir_name: Kubernetes 集群启动脚本与云提供商适配层
+        title: Kubernetes 集群启动脚本与云提供商适配层
+        scope:
+            - cluster/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime:
+        dir_name: Kubernetes 核心运行时库（pkg）
+        title: Kubernetes 核心运行时库（pkg）
+        scope:
+            - pkg/
+        source_files: []
+        children:
+            - core_runtime/admission_webhooks
+            - core_runtime/api_types
+            - core_runtime/auth_authorization
+            - core_runtime/client_library
+            - core_runtime/control_plane_orchestrators
+            - core_runtime/credential_provider
+            - core_runtime/features_flags
+            - core_runtime/kubectl_convert
+            - core_runtime/kubelet_node_agent
+            - core_runtime/kubemark
+            - core_runtime/printers
+            - core_runtime/probe_healthcheck
+            - core_runtime/proxy
+            - core_runtime/quota_evaluator
+            - core_runtime/registry_layer
+            - core_runtime/routes
+            - core_runtime/scheduler
+            - core_runtime/security_context
+            - core_runtime/shared_utils
+            - core_runtime/volume_plugins
+        depends_on: []
+        related_to: []
+    core_runtime/admission_webhooks:
+        dir_name: 准入 Webhook 与策略清单加载器
+        title: 准入 Webhook 与策略清单加载器
+        scope:
+            - pkg/admission/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/admission_api
+            - path: core_runtime/api_types/admissionregistration_api
+    core_runtime/api_types:
+        dir_name: Kubernetes API 组类型与版本注册聚合层
+        title: Kubernetes API 组类型与版本注册聚合层
+        scope:
+            - pkg/apis/
+            - pkg/api/
+        source_files: []
+        children:
+            - core_runtime/api_types/abac_api
+            - core_runtime/api_types/admission_api
+            - core_runtime/api_types/admissionregistration_api
+            - core_runtime/api_types/api_helpers_and_legacy
+            - core_runtime/api_types/apidiscovery_api
+            - core_runtime/api_types/apiserverinternal_api
+            - core_runtime/api_types/apps_api
+            - core_runtime/api_types/authentication_api
+            - core_runtime/api_types/authorization_api
+            - core_runtime/api_types/autoscaling_api
+            - core_runtime/api_types/batch_api
+            - core_runtime/api_types/certificates_api
+            - core_runtime/api_types/coordination_api
+            - core_runtime/api_types/core_api
+            - core_runtime/api_types/discovery_api
+            - core_runtime/api_types/events_api
+            - core_runtime/api_types/extensions_api
+            - core_runtime/api_types/flowcontrol_api
+            - core_runtime/api_types/imagepolicy_api
+            - core_runtime/api_types/networking_api
+            - core_runtime/api_types/node_api
+            - core_runtime/api_types/policy_api
+            - core_runtime/api_types/rbac_api
+            - core_runtime/api_types/resource_api
+            - core_runtime/api_types/scheduling_api
+            - core_runtime/api_types/storage_api
+            - core_runtime/api_types/storagemigration_api
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/apiserver_bootstrap
+            - path: core_runtime/control_plane_orchestrators/controller_manager
+            - path: core_runtime/scheduler
+    core_runtime/api_types/abac_api:
+        dir_name: ABAC 授权 API 类型定义与版本转换
+        title: ABAC 授权 API 类型定义与版本转换
+        scope:
+            - pkg/apis/abac/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/authorization_api
+    core_runtime/api_types/admission_api:
+        dir_name: Admission Webhook API 类型定义
+        title: Admission Webhook API 类型定义
+        scope:
+            - pkg/apis/admission/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/admission_webhooks
+            - path: core_runtime/api_types/admissionregistration_api
+    core_runtime/api_types/admissionregistration_api:
+        dir_name: AdmissionRegistration API 内部类型定义与验证
+        title: AdmissionRegistration API 内部类型定义与验证
+        scope:
+            - pkg/apis/admissionregistration/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/admission_webhooks
+            - path: core_runtime/api_types/admission_api
+            - path: core_runtime/registry_layer
+    core_runtime/api_types/api_helpers_and_legacy:
+        dir_name: API 类型辅助函数与遗留兼容层
+        title: API 类型辅助函数与遗留兼容层
+        scope:
+            - pkg/api/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/apidiscovery_api:
+        dir_name: API Discovery 资源类型定义与版本注册
+        title: API Discovery 资源类型定义与版本注册
+        scope:
+            - pkg/apis/apidiscovery/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/apiserverinternal_api:
+        dir_name: API Server 内部 API 类型定义 (internal.apiserver.k8s.io)
+        title: API Server 内部 API 类型定义 (internal.apiserver.k8s.io)
+        scope:
+            - pkg/apis/apiserverinternal/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/apps_api:
+        dir_name: apps API 组内部类型与版本转换
+        title: apps API 组内部类型与版本转换
+        scope:
+            - pkg/apis/apps/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/workload_controllers
+            - path: core_runtime/registry_layer
+    core_runtime/api_types/authentication_api:
+        dir_name: authentication.k8s.io API 组类型定义
+        title: authentication.k8s.io API 组类型定义
+        scope:
+            - pkg/apis/authentication/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/auth_authorization
+    core_runtime/api_types/authorization_api:
+        dir_name: authorization API 类型定义与版本注册
+        title: authorization API 类型定义与版本注册
+        scope:
+            - pkg/apis/authorization/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/abac_api
+            - path: core_runtime/auth_authorization
+    core_runtime/api_types/autoscaling_api:
+        dir_name: Autoscaling API 类型与版本转换层
+        title: Autoscaling API 类型与版本转换层
+        scope:
+            - pkg/apis/autoscaling/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/batch_api:
+        dir_name: Batch API 类型与版本化定义（Job_CronJob）
+        title: Batch API 类型与版本化定义（Job/CronJob）
+        scope:
+            - pkg/apis/batch/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/batch_workload_controllers
+    core_runtime/api_types/certificates_api:
+        dir_name: certificates.k8s.io API 组类型定义与版本化
+        title: certificates.k8s.io API 组类型定义与版本化
+        scope:
+            - pkg/apis/certificates/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem
+    core_runtime/api_types/coordination_api:
+        dir_name: 协调 API 组（coordination.k8s.io）类型与版本注册
+        title: 协调 API 组（coordination.k8s.io）类型与版本注册
+        scope:
+            - pkg/apis/coordination/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/core_api:
+        dir_name: Core API 内部对象与 v1 版本桥接层
+        title: Core API 内部对象与 v1 版本桥接层
+        scope:
+            - pkg/apis/core/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/extensions_api
+            - path: core_runtime/control_plane_orchestrators/controller_manager/node_management_controllers
+            - path: core_runtime/quota_evaluator
+            - path: core_runtime/registry_layer
+    core_runtime/api_types/discovery_api:
+        dir_name: discovery.k8s.io API 组定义（EndpointSlice）
+        title: discovery.k8s.io API 组定义（EndpointSlice）
+        scope:
+            - pkg/apis/discovery/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/networking_controllers
+    core_runtime/api_types/events_api:
+        dir_name: events API 组适配层（events.k8s.io）
+        title: events API 组适配层（events.k8s.io）
+        scope:
+            - pkg/apis/events/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/extensions_api:
+        dir_name: Extensions API Group（v1beta1）类型与注册
+        title: Extensions API Group（v1beta1）类型与注册
+        scope:
+            - pkg/apis/extensions/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/core_api
+    core_runtime/api_types/flowcontrol_api:
+        dir_name: API Priority & Fairness (FlowControl) API 类型与版本化定义
+        title: API Priority & Fairness (FlowControl) API 类型与版本化定义
+        scope:
+            - pkg/apis/flowcontrol/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/imagepolicy_api:
+        dir_name: ImagePolicy Admission API 类型定义
+        title: ImagePolicy Admission API 类型定义
+        scope:
+            - pkg/apis/imagepolicy/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/networking_api:
+        dir_name: networking.k8s.io API 类型定义与版本化
+        title: networking.k8s.io API 类型定义与版本化
+        scope:
+            - pkg/apis/networking/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/node_api:
+        dir_name: Node API Group (node.k8s.io) — RuntimeClass 类型定义与版本化
+        title: Node API Group (node.k8s.io) — RuntimeClass 类型定义与版本化
+        scope:
+            - pkg/apis/node/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/policy_api:
+        dir_name: Policy API 组（PodDisruptionBudget、Eviction）类型与版本转换
+        title: Policy API 组（PodDisruptionBudget、Eviction）类型与版本转换
+        scope:
+            - pkg/apis/policy/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/rbac_api:
+        dir_name: RBAC API 组类型与版本化定义
+        title: RBAC API 组类型与版本化定义
+        scope:
+            - pkg/apis/rbac/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/resource_api:
+        dir_name: 动态资源分配（DRA）API 类型与版本管理
+        title: 动态资源分配（DRA）API 类型与版本管理
+        scope:
+            - pkg/apis/resource/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/resource_policy_controllers
+    core_runtime/api_types/scheduling_api:
+        dir_name: 调度 API 组 (scheduling.k8s.io) 类型定义与注册
+        title: 调度 API 组 (scheduling.k8s.io) 类型定义与注册
+        scope:
+            - pkg/apis/scheduling/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/api_types/storage_api:
+        dir_name: 存储 API 组 (storage.k8s.io) 类型与版本定义
+        title: 存储 API 组 (storage.k8s.io) 类型与版本定义
+        scope:
+            - pkg/apis/storage/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem
+            - path: core_runtime/registry_layer
+    core_runtime/api_types/storagemigration_api:
+        dir_name: 存储版本迁移 API 类型定义
+        title: 存储版本迁移 API 类型定义
+        scope:
+            - pkg/apis/storagemigration/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/auth_authorization:
+        dir_name: 认证与授权核心组件（ABAC、证书签名者授权、ServiceAccount JWT）
+        title: 认证与授权核心组件（ABAC、证书签名者授权、ServiceAccount JWT）
+        scope:
+            - pkg/auth/
+            - pkg/certauthorization/
+            - pkg/serviceaccount/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/authentication_api
+            - path: core_runtime/api_types/authorization_api
+    core_runtime/client_library:
+        dir_name: 客户端库条件判断与集成测试
+        title: 客户端库条件判断与集成测试
+        scope:
+            - pkg/client/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators:
+        dir_name: 控制面运行时编排（API Server + Controller Manager）
+        title: 控制面运行时编排（API Server + Controller Manager）
+        scope:
+            - pkg/controlplane/
+            - pkg/kubeapiserver/
+            - pkg/controller/
+        source_files: []
+        children:
+            - core_runtime/control_plane_orchestrators/apiserver_bootstrap
+            - core_runtime/control_plane_orchestrators/control_plane_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/apiserver_bootstrap:
+        dir_name: kube-apiserver 启动编排与通用配置组装
+        title: kube-apiserver 启动编排与通用配置组装
+        scope:
+            - pkg/controlplane/apiserver/
+            - pkg/kubeapiserver/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/control_plane_servers/kube_apiserver
+            - path: core_runtime/api_types
+            - path: core_runtime/registry_layer
+    core_runtime/control_plane_orchestrators/control_plane_controllers:
+        dir_name: API Server 内置控制器集合
+        title: API Server 内置控制器集合
+        scope:
+            - pkg/controlplane/controller/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager:
+        dir_name: Kube Controller Manager 控制器包（pkg_controller）
+        title: Kube Controller Manager 控制器包（pkg/controller）
+        scope:
+            - pkg/controller/
+        source_files: []
+        children:
+            - core_runtime/control_plane_orchestrators/controller_manager/batch_workload_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/bootstrap_and_auth
+            - core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem
+            - core_runtime/control_plane_orchestrators/controller_manager/controller_framework
+            - core_runtime/control_plane_orchestrators/controller_manager/garbage_collection_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/misc_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/networking_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/node_management_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/pod_lifecycle_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/resource_policy_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem
+            - core_runtime/control_plane_orchestrators/controller_manager/workload_controllers
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/control_plane_servers/kube_controller_manager
+            - path: core_runtime/api_types
+    core_runtime/control_plane_orchestrators/controller_manager/batch_workload_controllers:
+        dir_name: 批处理工作负载控制器（Job、CronJob、DaemonSet）
+        title: 批处理工作负载控制器（Job、CronJob、DaemonSet）
+        scope:
+            - pkg/controller/job/
+            - pkg/controller/cronjob/
+            - pkg/controller/daemon/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/batch_api
+    core_runtime/control_plane_orchestrators/controller_manager/bootstrap_and_auth:
+        dir_name: 引导与驱逐控制器（Bootstrap、TaintEviction、PodGroupProtection）
+        title: 引导与驱逐控制器（Bootstrap、TaintEviction、PodGroupProtection）
+        scope:
+            - pkg/controller/bootstrap/
+            - pkg/controller/tainteviction/
+            - pkg/controller/scheduling/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem:
+        dir_name: 证书子系统控制器编排层
+        title: 证书子系统控制器编排层
+        scope:
+            - pkg/controller/certificates/
+        source_files: []
+        children:
+            - core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/authority_signer_approver
+            - core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/cleaner
+            - core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/clustertrustbundle_publisher
+            - core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/rootca_publisher
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/certificates_api
+    core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/authority_signer_approver:
+        dir_name: 证书签发链：CSR 审批、签名与 CA 策略
+        title: 证书签发链：CSR 审批、签名与 CA 策略
+        scope:
+            - pkg/controller/certificates/authority/
+            - pkg/controller/certificates/signer/
+            - pkg/controller/certificates/approver/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/rootca_publisher
+    core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/cleaner:
+        dir_name: 证书签名请求与 PodCertificateRequest 清理控制器
+        title: 证书签名请求与 PodCertificateRequest 清理控制器
+        scope:
+            - pkg/controller/certificates/cleaner/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/clustertrustbundle_publisher
+    core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/clustertrustbundle_publisher:
+        dir_name: ClusterTrustBundle CA 证书发布控制器
+        title: ClusterTrustBundle CA 证书发布控制器
+        scope:
+            - pkg/controller/certificates/clustertrustbundlepublisher/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/cleaner
+    core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/rootca_publisher:
+        dir_name: Root CA ConfigMap 发布控制器
+        title: Root CA ConfigMap 发布控制器
+        scope:
+            - pkg/controller/certificates/rootcacertpublisher/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/authority_signer_approver
+    core_runtime/control_plane_orchestrators/controller_manager/controller_framework:
+        dir_name: 控制器管理器配置 API 与通用工具库
+        title: 控制器管理器配置 API 与通用工具库
+        scope:
+            - pkg/controller/apis/
+            - pkg/controller/util/
+            - pkg/controller/testutil/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/garbage_collection_controllers:
+        dir_name: 垃圾回收与存储版本迁移控制器
+        title: 垃圾回收与存储版本迁移控制器
+        scope:
+            - pkg/controller/garbagecollector/
+            - pkg/controller/podgc/
+            - pkg/controller/storageversiongc/
+            - pkg/controller/storageversionmigrator/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/misc_controllers:
+        dir_name: 命名空间清理、Pod 中断预算与 ControllerRevision 历史管理控制器
+        title: 命名空间清理、Pod 中断预算与 ControllerRevision 历史管理控制器
+        scope:
+            - pkg/controller/namespace/
+            - pkg/controller/disruption/
+            - pkg/controller/history/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/networking_controllers:
+        dir_name: Endpoints 与 EndpointSlice 控制器（Endpoint、EndpointSlice、EndpointSliceMirroring）
+        title: Endpoints 与 EndpointSlice 控制器（Endpoint、EndpointSlice、EndpointSliceMirroring）
+        scope:
+            - pkg/controller/endpoint/
+            - pkg/controller/endpointslice/
+            - pkg/controller/endpointslicemirroring/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/discovery_api
+    core_runtime/control_plane_orchestrators/controller_manager/node_management_controllers:
+        dir_name: 节点生命周期、Node IPAM 与 ServiceAccount 控制器
+        title: 节点生命周期、Node IPAM 与 ServiceAccount 控制器
+        scope:
+            - pkg/controller/nodelifecycle/
+            - pkg/controller/nodeipam/
+            - pkg/controller/serviceaccount/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/core_api
+    core_runtime/control_plane_orchestrators/controller_manager/pod_lifecycle_controllers:
+        dir_name: Pod 生命周期 TTL 与设备污点驱逐控制器
+        title: Pod 生命周期 TTL 与设备污点驱逐控制器
+        scope:
+            - pkg/controller/ttl/
+            - pkg/controller/ttlafterfinished/
+            - pkg/controller/devicetainteviction/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/resource_policy_controllers:
+        dir_name: 资源配额与动态资源分配控制器
+        title: 资源配额与动态资源分配控制器
+        scope:
+            - pkg/controller/resourcequota/
+            - pkg/controller/resourceclaim/
+            - pkg/controller/resourcepoolstatusrequest/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/resource_api
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem:
+        dir_name: KCM 存储子系统控制器集合
+        title: KCM 存储子系统控制器集合
+        scope:
+            - pkg/controller/volume/
+        source_files: []
+        children:
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/attachdetach
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/ephemeral
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/protection_controllers
+            - core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/selinux_warning
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/storage_api
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/attachdetach:
+        dir_name: Attach_Detach 控制器（卷挂载生命周期编排）
+        title: Attach/Detach 控制器（卷挂载生命周期编排）
+        scope:
+            - pkg/controller/volume/attachdetach/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/ephemeral:
+        dir_name: 通用临时卷控制器 (Generic Ephemeral Volume Controller)
+        title: 通用临时卷控制器 (Generic Ephemeral Volume Controller)
+        scope:
+            - pkg/controller/volume/ephemeral/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/persistentvolume:
+        dir_name: PersistentVolume 控制器（PV_PVC 绑定与生命周期管理）
+        title: PersistentVolume 控制器（PV/PVC 绑定与生命周期管理）
+        scope:
+            - pkg/controller/volume/persistentvolume/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/attachdetach
+            - path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/ephemeral
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/protection_controllers:
+        dir_name: 持久化卷保护控制器（PVC_PV_VAC Finalizer 管理）
+        title: 持久化卷保护控制器（PVC/PV/VAC Finalizer 管理）
+        scope:
+            - pkg/controller/volume/pvcprotection/
+            - pkg/controller/volume/pvprotection/
+            - pkg/controller/volume/vacprotection/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/selinux_warning:
+        dir_name: SELinux 卷冲突告警控制器
+        title: SELinux 卷冲突告警控制器
+        scope:
+            - pkg/controller/volume/selinuxwarning/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/control_plane_orchestrators/controller_manager/workload_controllers:
+        dir_name: 工作负载控制器（Deployment _ StatefulSet _ ReplicaSet）
+        title: 工作负载控制器（Deployment / StatefulSet / ReplicaSet）
+        scope:
+            - pkg/controller/deployment/
+            - pkg/controller/statefulset/
+            - pkg/controller/replicaset/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/apps_api
+    core_runtime/credential_provider:
+        dir_name: Kubernetes 镜像拉取凭据提供器
+        title: Kubernetes 镜像拉取凭据提供器
+        scope:
+            - pkg/credentialprovider/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/features_flags:
+        dir_name: 运行时特性开关与能力_字段路径工具
+        title: 运行时特性开关与能力/字段路径工具
+        scope:
+            - pkg/features/
+            - pkg/capabilities/
+            - pkg/fieldpath/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubectl_convert:
+        dir_name: kubectl convert 子命令（API 版本转换）
+        title: kubectl convert 子命令（API 版本转换）
+        scope:
+            - pkg/kubectl/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent:
+        dir_name: Kubelet 节点代理核心运行时
+        title: Kubelet 节点代理核心运行时
+        scope:
+            - pkg/kubelet/
+        source_files: []
+        children:
+            - core_runtime/kubelet_node_agent/config_and_types
+            - core_runtime/kubelet_node_agent/container_runtime
+            - core_runtime/kubelet_node_agent/image_management
+            - core_runtime/kubelet_node_agent/kubelet_core
+            - core_runtime/kubelet_node_agent/kuberuntime
+            - core_runtime/kubelet_node_agent/node_services
+            - core_runtime/kubelet_node_agent/plugin_manager
+            - core_runtime/kubelet_node_agent/pod_lifecycle
+            - core_runtime/kubelet_node_agent/resource_management
+            - core_runtime/kubelet_node_agent/server_api
+            - core_runtime/kubelet_node_agent/stats_reporting
+            - core_runtime/kubelet_node_agent/volume_manager
+        depends_on: []
+        related_to:
+            - path: cli_and_build_tools/node_agents/kubelet
+            - path: core_runtime/proxy
+            - path: core_runtime/volume_plugins
+    core_runtime/kubelet_node_agent/config_and_types:
+        dir_name: Kubelet 配置源与类型定义
+        title: Kubelet 配置源与类型定义
+        scope:
+            - pkg/kubelet/config/
+            - pkg/kubelet/kubeletconfig/
+            - pkg/kubelet/types/
+            - pkg/kubelet/envvars/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/container_runtime:
+        dir_name: 容器运行时抽象与 cAdvisor 指标采集
+        title: 容器运行时抽象与 cAdvisor 指标采集
+        scope:
+            - pkg/kubelet/container/
+            - pkg/kubelet/cadvisor/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/stats_reporting
+    core_runtime/kubelet_node_agent/image_management:
+        dir_name: Kubelet 镜像生命周期与拉取管理
+        title: Kubelet 镜像生命周期与拉取管理
+        scope:
+            - pkg/kubelet/images/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/kubelet_core:
+        dir_name: Kubelet 核心运行时与节点代理
+        title: Kubelet 核心运行时与节点代理
+        scope:
+            - pkg/kubelet/kubelet.go
+            - pkg/kubelet/kubelet_*.go
+            - pkg/kubelet/pod_workers.go
+            - pkg/kubelet/pod_container_deletor.go
+            - pkg/kubelet/volume_host.go
+            - pkg/kubelet/runtime.go
+            - pkg/kubelet/errors.go
+            - pkg/kubelet/reason_cache.go
+            - pkg/kubelet/active_deadline.go
+            - pkg/kubelet/preemption/
+            - pkg/kubelet/checkpointmanager/
+            - pkg/kubelet/client/
+            - pkg/kubelet/certificate/
+            - pkg/kubelet/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/kuberuntime:
+        dir_name: CRI 运行时实现 (kuberuntime)
+        title: CRI 运行时实现 (kuberuntime)
+        scope:
+            - pkg/kubelet/kuberuntime/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/pod_lifecycle
+    core_runtime/kubelet_node_agent/node_services:
+        dir_name: Kubelet 节点运行时服务集合
+        title: Kubelet 节点运行时服务集合
+        scope:
+            - pkg/kubelet/status/
+            - pkg/kubelet/nodestatus/
+            - pkg/kubelet/metrics/
+            - pkg/kubelet/events/
+            - pkg/kubelet/sysctl/
+            - pkg/kubelet/token/
+            - pkg/kubelet/secret/
+            - pkg/kubelet/configmap/
+            - pkg/kubelet/clustertrustbundle/
+            - pkg/kubelet/podcertificate/
+            - pkg/kubelet/runtimeclass/
+            - pkg/kubelet/watchdog/
+            - pkg/kubelet/userns/
+            - pkg/kubelet/nodeshutdown/
+            - pkg/kubelet/oom/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/server_api
+    core_runtime/kubelet_node_agent/plugin_manager:
+        dir_name: Kubelet 外部插件管理器（Plugin Manager）
+        title: Kubelet 外部插件管理器（Plugin Manager）
+        scope:
+            - pkg/kubelet/pluginmanager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/pod_lifecycle:
+        dir_name: Pod 生命周期与探测子系统
+        title: Pod 生命周期与探测子系统
+        scope:
+            - pkg/kubelet/pod/
+            - pkg/kubelet/lifecycle/
+            - pkg/kubelet/prober/
+            - pkg/kubelet/pleg/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/kuberuntime
+    core_runtime/kubelet_node_agent/resource_management:
+        dir_name: Kubelet 节点资源管理子系统
+        title: Kubelet 节点资源管理子系统
+        scope:
+            - pkg/kubelet/cm/
+            - pkg/kubelet/eviction/
+            - pkg/kubelet/qos/
+            - pkg/kubelet/allocation/
+        source_files: []
+        children:
+            - core_runtime/kubelet_node_agent/resource_management/admission_and_state
+            - core_runtime/kubelet_node_agent/resource_management/allocation
+            - core_runtime/kubelet_node_agent/resource_management/cgroup_manager
+            - core_runtime/kubelet_node_agent/resource_management/container_manager_core
+            - core_runtime/kubelet_node_agent/resource_management/cpu_manager
+            - core_runtime/kubelet_node_agent/resource_management/device_manager_and_dra
+            - core_runtime/kubelet_node_agent/resource_management/eviction
+            - core_runtime/kubelet_node_agent/resource_management/memory_manager
+            - core_runtime/kubelet_node_agent/resource_management/qos
+            - core_runtime/kubelet_node_agent/resource_management/topology_manager
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/admission_and_state:
+        dir_name: 容器分配准入错误、容器映射与资源更新事件（kubelet cm 支撑包）
+        title: 容器分配准入错误、容器映射与资源更新事件（kubelet cm 支撑包）
+        scope:
+            - pkg/kubelet/cm/admission/
+            - pkg/kubelet/cm/containermap/
+            - pkg/kubelet/cm/resourceupdates/
+            - pkg/kubelet/cm/testing/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/allocation:
+        dir_name: Pod 资源分配与原地垂直扩容管理器
+        title: Pod 资源分配与原地垂直扩容管理器
+        scope:
+            - pkg/kubelet/allocation/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/cgroup_manager:
+        dir_name: Cgroup v1_v2 资源管理实现
+        title: Cgroup v1/v2 资源管理实现
+        scope:
+            - pkg/kubelet/cm/cgroup_v1_manager_linux.go
+            - pkg/kubelet/cm/cgroup_v2_manager_linux.go
+            - pkg/kubelet/cm/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core
+    core_runtime/kubelet_node_agent/resource_management/container_manager_core:
+        dir_name: 容器与 cgroup 资源管理器核心
+        title: 容器与 cgroup 资源管理器核心
+        scope:
+            - pkg/kubelet/cm/container_manager.go
+            - pkg/kubelet/cm/cgroup_manager_linux.go
+            - pkg/kubelet/cm/internal_container_lifecycle.go
+            - pkg/kubelet/cm/pod_container_manager_linux.go
+            - pkg/kubelet/cm/node_container_manager_linux.go
+            - pkg/kubelet/cm/qos_container_manager_linux.go
+            - pkg/kubelet/cm/helpers.go
+            - pkg/kubelet/cm/types.go
+            - pkg/kubelet/cm/doc.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/resource_management/cgroup_manager
+            - path: core_runtime/kubelet_node_agent/resource_management/cpu_manager
+            - path: core_runtime/kubelet_node_agent/resource_management/memory_manager
+            - path: core_runtime/kubelet_node_agent/resource_management/topology_manager
+    core_runtime/kubelet_node_agent/resource_management/cpu_manager:
+        dir_name: Kubelet CPU Manager（CPU 独占分配与拓扑感知）
+        title: Kubelet CPU Manager（CPU 独占分配与拓扑感知）
+        scope:
+            - pkg/kubelet/cm/cpumanager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core
+    core_runtime/kubelet_node_agent/resource_management/device_manager_and_dra:
+        dir_name: 设备插件与动态资源分配管理器（Device Manager & DRA）
+        title: 设备插件与动态资源分配管理器（Device Manager & DRA）
+        scope:
+            - pkg/kubelet/cm/devicemanager/
+            - pkg/kubelet/cm/dra/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/eviction:
+        dir_name: 节点资源回收与驱逐管理器
+        title: 节点资源回收与驱逐管理器
+        scope:
+            - pkg/kubelet/eviction/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/memory_manager:
+        dir_name: Kubelet 内存管理器（NUMA 感知内存分配策略）
+        title: Kubelet 内存管理器（NUMA 感知内存分配策略）
+        scope:
+            - pkg/kubelet/cm/memorymanager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core
+    core_runtime/kubelet_node_agent/resource_management/qos:
+        dir_name: QoS 等级与 OOM 评分计算
+        title: QoS 等级与 OOM 评分计算
+        scope:
+            - pkg/kubelet/qos/
+            - pkg/kubelet/cm/qos/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubelet_node_agent/resource_management/topology_manager:
+        dir_name: NUMA Topology 感知与资源亲和策略管理器
+        title: NUMA Topology 感知与资源亲和策略管理器
+        scope:
+            - pkg/kubelet/cm/topologymanager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core
+    core_runtime/kubelet_node_agent/server_api:
+        dir_name: Kubelet 外部服务端与 API 定义
+        title: Kubelet 外部服务端与 API 定义
+        scope:
+            - pkg/kubelet/server/
+            - pkg/kubelet/apis/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/node_services
+    core_runtime/kubelet_node_agent/stats_reporting:
+        dir_name: 节点与容器指标采集、Windows 平台统计与日志轮转
+        title: 节点与容器指标采集、Windows 平台统计与日志轮转
+        scope:
+            - pkg/kubelet/stats/
+            - pkg/kubelet/winstats/
+            - pkg/kubelet/logs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent/container_runtime
+    core_runtime/kubelet_node_agent/volume_manager:
+        dir_name: Kubelet 卷管理器（Volume Manager）
+        title: Kubelet 卷管理器（Volume Manager）
+        scope:
+            - pkg/kubelet/volumemanager/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/kubemark:
+        dir_name: Kubemark 虚节点与 Hollow Kubelet 运行时
+        title: Kubemark 虚节点与 Hollow Kubelet 运行时
+        scope:
+            - pkg/kubemark/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/printers:
+        dir_name: Kubernetes 资源打印器与表格生成框架
+        title: Kubernetes 资源打印器与表格生成框架
+        scope:
+            - pkg/printers/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/probe_healthcheck:
+        dir_name: 容器健康探针实现（Exec_HTTP_TCP_gRPC）
+        title: 容器健康探针实现（Exec/HTTP/TCP/gRPC）
+        scope:
+            - pkg/probe/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/proxy:
+        dir_name: Kube-Proxy 代理运行时核心
+        title: Kube-Proxy 代理运行时核心
+        scope:
+            - pkg/proxy/
+        source_files: []
+        children:
+            - core_runtime/proxy/proxy_backends
+            - core_runtime/proxy/proxy_core
+            - core_runtime/proxy/proxy_shared
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent
+    core_runtime/proxy/proxy_backends:
+        dir_name: kube-proxy 数据面后端实现集
+        title: kube-proxy 数据面后端实现集
+        scope:
+            - pkg/proxy/iptables/
+            - pkg/proxy/ipvs/
+            - pkg/proxy/nftables/
+            - pkg/proxy/winkernel/
+        source_files: []
+        children:
+            - core_runtime/proxy/proxy_backends/iptables_backend
+            - core_runtime/proxy/proxy_backends/ipvs_backend
+            - core_runtime/proxy/proxy_backends/nftables_backend
+            - core_runtime/proxy/proxy_backends/winkernel_backend
+        depends_on: []
+        related_to: []
+    core_runtime/proxy/proxy_backends/iptables_backend:
+        dir_name: iptables 后端代理实现
+        title: iptables 后端代理实现
+        scope:
+            - pkg/proxy/iptables/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/proxy/proxy_shared
+    core_runtime/proxy/proxy_backends/ipvs_backend:
+        dir_name: IPVS 模式 kube-proxy 后端实现
+        title: IPVS 模式 kube-proxy 后端实现
+        scope:
+            - pkg/proxy/ipvs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/proxy/proxy_shared
+    core_runtime/proxy/proxy_backends/nftables_backend:
+        dir_name: NFTables 模式 kube-proxy 后端
+        title: NFTables 模式 kube-proxy 后端
+        scope:
+            - pkg/proxy/nftables/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/proxy/proxy_shared
+    core_runtime/proxy/proxy_backends/winkernel_backend:
+        dir_name: Windows 内核模式 kube-proxy 后端（HNS_HCN）
+        title: Windows 内核模式 kube-proxy 后端（HNS/HCN）
+        scope:
+            - pkg/proxy/winkernel/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/proxy/proxy_shared
+    core_runtime/proxy/proxy_core:
+        dir_name: 代理核心支撑：双栈元代理、有界频率调度器与网络工具集
+        title: 代理核心支撑：双栈元代理、有界频率调度器与网络工具集
+        scope:
+            - pkg/proxy/metaproxier/
+            - pkg/proxy/runner/
+            - pkg/proxy/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/proxy/proxy_shared:
+        dir_name: Kube-Proxy 共享运行时支撑库
+        title: Kube-Proxy 共享运行时支撑库
+        scope:
+            - pkg/proxy/apis/
+            - pkg/proxy/config/
+            - pkg/proxy/conntrack/
+            - pkg/proxy/healthcheck/
+            - pkg/proxy/metrics/
+            - pkg/proxy/kubemark/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/proxy/proxy_backends/iptables_backend
+            - path: core_runtime/proxy/proxy_backends/ipvs_backend
+            - path: core_runtime/proxy/proxy_backends/nftables_backend
+            - path: core_runtime/proxy/proxy_backends/winkernel_backend
+    core_runtime/quota_evaluator:
+        dir_name: 核心 API 组配额评估器
+        title: 核心 API 组配额评估器
+        scope:
+            - pkg/quota/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/core_api
+    core_runtime/registry_layer:
+        dir_name: API Server 资源注册层（Registry Layer）
+        title: API Server 资源注册层（Registry Layer）
+        scope:
+            - pkg/registry/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types/admissionregistration_api
+            - path: core_runtime/api_types/apps_api
+            - path: core_runtime/api_types/core_api
+            - path: core_runtime/api_types/storage_api
+            - path: core_runtime/control_plane_orchestrators/apiserver_bootstrap
+    core_runtime/routes:
+        dir_name: Master HTTP 可选路由集合
+        title: Master HTTP 可选路由集合
+        scope:
+            - pkg/routes/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler:
+        dir_name: kube-scheduler 调度器核心模块
+        title: kube-scheduler 调度器核心模块
+        scope:
+            - pkg/scheduler/
+        source_files: []
+        children:
+            - core_runtime/scheduler/backend
+            - core_runtime/scheduler/config_api
+            - core_runtime/scheduler/core_orchestration
+            - core_runtime/scheduler/framework_and_plugins
+            - core_runtime/scheduler/metrics
+            - core_runtime/scheduler/testing_support
+            - core_runtime/scheduler/util
+        depends_on: []
+        related_to:
+            - path: core_runtime/api_types
+            - path: core_runtime/volume_plugins
+    core_runtime/scheduler/backend:
+        dir_name: 调度器后端：缓存、队列与 API 分发
+        title: 调度器后端：缓存、队列与 API 分发
+        scope:
+            - pkg/scheduler/backend/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/config_api:
+        dir_name: KubeScheduler 组件配置 API（内部类型与版本桥接）
+        title: KubeScheduler 组件配置 API（内部类型与版本桥接）
+        scope:
+            - pkg/scheduler/apis/config/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/core_orchestration:
+        dir_name: 调度器核心编排与单任务执行循环
+        title: 调度器核心编排与单任务执行循环
+        scope:
+            - pkg/scheduler/scheduler.go
+            - pkg/scheduler/schedule_one.go
+            - pkg/scheduler/schedule_one_podgroup.go
+            - pkg/scheduler/eventhandlers.go
+            - pkg/scheduler/extender.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/framework_and_plugins:
+        dir_name: 调度器框架与内置插件集合
+        title: 调度器框架与内置插件集合
+        scope:
+            - pkg/scheduler/framework/
+        source_files: []
+        children:
+            - core_runtime/scheduler/framework_and_plugins/api_calls
+            - core_runtime/scheduler/framework_and_plugins/core_framework_api
+            - core_runtime/scheduler/framework_and_plugins/framework_runtime
+            - core_runtime/scheduler/framework_and_plugins/parallelize
+            - core_runtime/scheduler/framework_and_plugins/plugins_registry
+            - core_runtime/scheduler/framework_and_plugins/preemption_engine
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/framework_and_plugins/api_calls:
+        dir_name: 调度器框架内置 API 调用实现
+        title: 调度器框架内置 API 调用实现
+        scope:
+            - pkg/scheduler/framework/api_calls/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/framework_and_plugins/core_framework_api:
+        dir_name: 调度框架核心接口与类型定义
+        title: 调度框架核心接口与类型定义
+        scope:
+            - pkg/scheduler/framework/interface.go
+            - pkg/scheduler/framework/types.go
+            - pkg/scheduler/framework/cycle_state.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/scheduler/framework_and_plugins/framework_runtime
+            - path: core_runtime/scheduler/framework_and_plugins/plugins_registry
+            - path: core_runtime/scheduler/framework_and_plugins/preemption_engine
+    core_runtime/scheduler/framework_and_plugins/framework_runtime:
+        dir_name: 调度器框架运行时与插件生命周期管理
+        title: 调度器框架运行时与插件生命周期管理
+        scope:
+            - pkg/scheduler/framework/runtime/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/scheduler/framework_and_plugins/core_framework_api
+    core_runtime/scheduler/framework_and_plugins/parallelize:
+        dir_name: 调度器并行执行与结果通道工具
+        title: 调度器并行执行与结果通道工具
+        scope:
+            - pkg/scheduler/framework/parallelize/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/framework_and_plugins/plugins_registry:
+        dir_name: 调度器内置插件与自动扩缩容契约
+        title: 调度器内置插件与自动扩缩容契约
+        scope:
+            - pkg/scheduler/framework/plugins/
+            - pkg/scheduler/framework/autoscaler_contract/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/scheduler/framework_and_plugins/core_framework_api
+    core_runtime/scheduler/framework_and_plugins/preemption_engine:
+        dir_name: 调度器抢占引擎（Pod 与 PodGroup）
+        title: 调度器抢占引擎（Pod 与 PodGroup）
+        scope:
+            - pkg/scheduler/framework/preemption/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/scheduler/framework_and_plugins/core_framework_api
+    core_runtime/scheduler/metrics:
+        dir_name: 调度器指标定义与采集层
+        title: 调度器指标定义与采集层
+        scope:
+            - pkg/scheduler/metrics/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/testing_support:
+        dir_name: 调度器测试支撑库（Wrappers、Fake Plugins & Listers）
+        title: 调度器测试支撑库（Wrappers、Fake Plugins & Listers）
+        scope:
+            - pkg/scheduler/testing/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/scheduler/util:
+        dir_name: 调度器通用工具与假设缓存
+        title: 调度器通用工具与假设缓存
+        scope:
+            - pkg/scheduler/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/security_context:
+        dir_name: 安全上下文与 AppArmor 校验
+        title: 安全上下文与 AppArmor 校验
+        scope:
+            - pkg/security/
+            - pkg/securitycontext/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/shared_utils:
+        dir_name: 核心运行时共享工具集
+        title: 核心运行时共享工具集
+        scope:
+            - pkg/util/
+            - pkg/cluster/
+            - pkg/windows/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins:
+        dir_name: Kubelet Volume 插件体系
+        title: Kubelet Volume 插件体系
+        scope:
+            - pkg/volume/
+        source_files: []
+        children:
+            - core_runtime/volume_plugins/core_volume_interfaces
+            - core_runtime/volume_plugins/csi_plugin
+            - core_runtime/volume_plugins/flexvolume_plugin
+            - core_runtime/volume_plugins/metrics_and_validation
+            - core_runtime/volume_plugins/network_block_plugins
+            - core_runtime/volume_plugins/projected_config_plugins
+            - core_runtime/volume_plugins/shared_util
+            - core_runtime/volume_plugins/simple_local_plugins
+        depends_on: []
+        related_to:
+            - path: core_runtime/kubelet_node_agent
+            - path: core_runtime/scheduler
+    core_runtime/volume_plugins/core_volume_interfaces:
+        dir_name: 卷插件核心接口与注册中心
+        title: 卷插件核心接口与注册中心
+        scope:
+            - pkg/volume/plugins.go
+            - pkg/volume/volume.go
+            - pkg/volume/noop_expandable_plugin.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/csi_plugin:
+        dir_name: Kubelet CSI 卷插件与迁移桥接
+        title: Kubelet CSI 卷插件与迁移桥接
+        scope:
+            - pkg/volume/csi/
+            - pkg/volume/csimigration/
+        source_files: []
+        children:
+            - core_runtime/volume_plugins/csi_plugin/csi_attacher_mounter
+            - core_runtime/volume_plugins/csi_plugin/csi_core
+            - core_runtime/volume_plugins/csi_plugin/csi_node_infra
+            - core_runtime/volume_plugins/csi_plugin/csi_testing
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/shared_util
+    core_runtime/volume_plugins/csi_plugin/csi_attacher_mounter:
+        dir_name: CSI 卷附加器与挂载器实现
+        title: CSI 卷附加器与挂载器实现
+        scope:
+            - pkg/volume/csi/csi_attacher.go
+            - pkg/volume/csi/csi_mounter.go
+            - pkg/volume/csi/csi_block.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/csi_plugin/csi_core
+    core_runtime/volume_plugins/csi_plugin/csi_core:
+        dir_name: CSI 插件核心（Kubelet 节点端 CSI 运行时）
+        title: CSI 插件核心（Kubelet 节点端 CSI 运行时）
+        scope:
+            - pkg/volume/csi/csi_plugin.go
+            - pkg/volume/csi/csi_client.go
+            - pkg/volume/csi/csi_drivers_store.go
+            - pkg/volume/csi/csi_util.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/csi_plugin/csi_attacher_mounter
+            - path: core_runtime/volume_plugins/csi_plugin/csi_node_infra
+            - path: core_runtime/volume_plugins/csi_plugin/csi_testing
+    core_runtime/volume_plugins/csi_plugin/csi_node_infra:
+        dir_name: CSI 节点信息管理与 Allocatable 周期更新
+        title: CSI 节点信息管理与 Allocatable 周期更新
+        scope:
+            - pkg/volume/csi/nodeinfomanager/
+            - pkg/volume/csi/csi_node_updater.go
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/csi_plugin/csi_core
+    core_runtime/volume_plugins/csi_plugin/csi_testing:
+        dir_name: CSI 插件测试桩与测试辅助
+        title: CSI 插件测试桩与测试辅助
+        scope:
+            - pkg/volume/csi/fake/
+            - pkg/volume/csi/testing/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/csi_plugin/csi_core
+    core_runtime/volume_plugins/flexvolume_plugin:
+        dir_name: FlexVolume 动态插件桥接层
+        title: FlexVolume 动态插件桥接层
+        scope:
+            - pkg/volume/flexvolume/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/shared_util
+    core_runtime/volume_plugins/metrics_and_validation:
+        dir_name: 卷指标采集与 PV 校验
+        title: 卷指标采集与 PV 校验
+        scope:
+            - pkg/volume/metrics_*.go
+            - pkg/volume/validation/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/network_block_plugins:
+        dir_name: FC 与 iSCSI 网络块存储插件
+        title: FC 与 iSCSI 网络块存储插件
+        scope:
+            - pkg/volume/fc/
+            - pkg/volume/iscsi/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/shared_util
+    core_runtime/volume_plugins/projected_config_plugins:
+        dir_name: Projected Config Volume Plugins（ConfigMap_Secret_DownwardAPI_GitRepo_Image）
+        title: Projected Config Volume Plugins（ConfigMap/Secret/DownwardAPI/GitRepo/Image）
+        scope:
+            - pkg/volume/configmap/
+            - pkg/volume/downwardapi/
+            - pkg/volume/git_repo/
+            - pkg/volume/image/
+            - pkg/volume/projected/
+            - pkg/volume/secret/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/shared_util
+    core_runtime/volume_plugins/shared_util:
+        dir_name: Kubelet Volume 插件共享工具库
+        title: Kubelet Volume 插件共享工具库
+        scope:
+            - pkg/volume/util/
+        source_files: []
+        children:
+            - core_runtime/volume_plugins/shared_util/fs_helpers
+            - core_runtime/volume_plugins/shared_util/fsquota
+            - core_runtime/volume_plugins/shared_util/hostutil
+            - core_runtime/volume_plugins/shared_util/operation_executor
+            - core_runtime/volume_plugins/shared_util/subpath
+            - core_runtime/volume_plugins/shared_util/types_and_shared_helpers
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/csi_plugin
+            - path: core_runtime/volume_plugins/flexvolume_plugin
+            - path: core_runtime/volume_plugins/network_block_plugins
+            - path: core_runtime/volume_plugins/projected_config_plugins
+            - path: core_runtime/volume_plugins/simple_local_plugins
+    core_runtime/volume_plugins/shared_util/fs_helpers:
+        dir_name: 卷路径与文件系统辅助工具
+        title: 卷路径与文件系统辅助工具
+        scope:
+            - pkg/volume/util/fs/
+            - pkg/volume/util/volumepathhandler/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/shared_util/fsquota:
+        dir_name: Linux 项目配额（Project Quota）文件系统隔离工具
+        title: Linux 项目配额（Project Quota）文件系统隔离工具
+        scope:
+            - pkg/volume/util/fsquota/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/shared_util/hostutil:
+        dir_name: 主机文件系统与设备探测工具集
+        title: 主机文件系统与设备探测工具集
+        scope:
+            - pkg/volume/util/hostutil/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/shared_util/operation_executor:
+        dir_name: 卷操作执行器与生成器（Attach_Detach_Mount_Unmount）
+        title: 卷操作执行器与生成器（Attach/Detach/Mount/Unmount）
+        scope:
+            - pkg/volume/util/operationexecutor/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/shared_util/subpath:
+        dir_name: 子路径安全绑定与创建（Subpath）
+        title: 子路径安全绑定与创建（Subpath）
+        scope:
+            - pkg/volume/util/subpath/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/shared_util/types_and_shared_helpers:
+        dir_name: Volume 插件共享工具与类型库
+        title: Volume 插件共享工具与类型库
+        scope:
+            - pkg/volume/util/types/
+            - pkg/volume/util/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    core_runtime/volume_plugins/simple_local_plugins:
+        dir_name: 内置简单本地卷插件（emptyDir_hostPath_local_nfs）
+        title: 内置简单本地卷插件（emptyDir/hostPath/local/nfs）
+        scope:
+            - pkg/volume/emptydir/
+            - pkg/volume/hostpath/
+            - pkg/volume/local/
+            - pkg/volume/nfs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core_runtime/volume_plugins/shared_util
+    staged_libraries:
+        dir_name: Kubernetes Staged Go Modules（staging_src_k8s.io）
+        title: Kubernetes Staged Go Modules（staging/src/k8s.io）
+        scope:
+            - staging/src/k8s.io/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    tests:
+        dir_name: Kubernetes 测试套件与测试基础设施
+        title: Kubernetes 测试套件与测试基础设施
+        scope:
+            - test/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

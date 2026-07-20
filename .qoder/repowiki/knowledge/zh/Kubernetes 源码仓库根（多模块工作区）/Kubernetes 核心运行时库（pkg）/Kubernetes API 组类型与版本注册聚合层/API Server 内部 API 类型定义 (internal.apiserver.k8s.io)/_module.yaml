@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/apiserverinternal_api
+title: API Server 内部 API 类型定义 (internal.apiserver.k8s.io)
+scope:
+    - pkg/apis/apiserverinternal/
+source_files: []
+depends_on: []
+related_to: []

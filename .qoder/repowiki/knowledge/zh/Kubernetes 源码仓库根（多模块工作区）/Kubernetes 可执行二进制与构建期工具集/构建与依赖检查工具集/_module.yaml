@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/build_and_check_utils
+title: 构建与依赖检查工具集
+scope:
+    - cmd/clicheck/
+    - cmd/dependencycheck/
+    - cmd/dependencyverifier/
+source_files: []
+depends_on: []
+related_to: []

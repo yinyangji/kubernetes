@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/csi_plugin/csi_attacher_mounter
+title: CSI 卷附加器与挂载器实现
+scope:
+    - pkg/volume/csi/csi_attacher.go
+    - pkg/volume/csi/csi_mounter.go
+    - pkg/volume/csi/csi_block.go
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/csi_plugin/csi_core

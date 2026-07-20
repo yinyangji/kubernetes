@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/garbage_collection_controllers
+title: 垃圾回收与存储版本迁移控制器
+scope:
+    - pkg/controller/garbagecollector/
+    - pkg/controller/podgc/
+    - pkg/controller/storageversiongc/
+    - pkg/controller/storageversionmigrator/
+source_files: []
+depends_on: []
+related_to: []

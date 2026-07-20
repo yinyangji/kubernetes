@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/rootca_publisher
+title: Root CA ConfigMap 发布控制器
+scope:
+    - pkg/controller/certificates/rootcacertpublisher/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem/authority_signer_approver

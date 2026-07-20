@@ -1,0 +1,17 @@
+schema_version: 1
+module_path: core_runtime/proxy/proxy_shared
+title: Kube-Proxy 共享运行时支撑库
+scope:
+    - pkg/proxy/apis/
+    - pkg/proxy/config/
+    - pkg/proxy/conntrack/
+    - pkg/proxy/healthcheck/
+    - pkg/proxy/metrics/
+    - pkg/proxy/kubemark/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/proxy/proxy_backends/iptables_backend
+    - path: core_runtime/proxy/proxy_backends/ipvs_backend
+    - path: core_runtime/proxy/proxy_backends/nftables_backend
+    - path: core_runtime/proxy/proxy_backends/winkernel_backend

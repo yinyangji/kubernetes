@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/api_types/rbac_api
+title: RBAC API 组类型与版本化定义
+scope:
+    - pkg/apis/rbac/
+source_files: []
+depends_on: []
+related_to: []

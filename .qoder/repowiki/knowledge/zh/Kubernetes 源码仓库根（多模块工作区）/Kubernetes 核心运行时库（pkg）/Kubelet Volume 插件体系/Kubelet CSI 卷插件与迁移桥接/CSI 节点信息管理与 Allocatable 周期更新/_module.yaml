@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/csi_plugin/csi_node_infra
+title: CSI 节点信息管理与 Allocatable 周期更新
+scope:
+    - pkg/volume/csi/nodeinfomanager/
+    - pkg/volume/csi/csi_node_updater.go
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/csi_plugin/csi_core

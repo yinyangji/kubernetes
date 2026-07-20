@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers/kube_controller_manager/controller_bootstrap_and_options
+title: kube-controller-manager 启动引导与控制器选项
+scope:
+    - cmd/kube-controller-manager/app/bootstrap.go
+    - cmd/kube-controller-manager/app/controllermanager.go
+    - cmd/kube-controller-manager/app/options/
+source_files: []
+depends_on: []
+related_to: []

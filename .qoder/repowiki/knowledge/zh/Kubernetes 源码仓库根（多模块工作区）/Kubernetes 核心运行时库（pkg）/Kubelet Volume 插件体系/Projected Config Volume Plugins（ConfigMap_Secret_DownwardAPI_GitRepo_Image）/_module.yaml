@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/projected_config_plugins
+title: Projected Config Volume Plugins（ConfigMap/Secret/DownwardAPI/GitRepo/Image）
+scope:
+    - pkg/volume/configmap/
+    - pkg/volume/downwardapi/
+    - pkg/volume/git_repo/
+    - pkg/volume/image/
+    - pkg/volume/projected/
+    - pkg/volume/secret/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/shared_util

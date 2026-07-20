@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/scheduler/framework_and_plugins/plugins_registry
+title: 调度器内置插件与自动扩缩容契约
+scope:
+    - pkg/scheduler/framework/plugins/
+    - pkg/scheduler/framework/autoscaler_contract/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/scheduler/framework_and_plugins/core_framework_api

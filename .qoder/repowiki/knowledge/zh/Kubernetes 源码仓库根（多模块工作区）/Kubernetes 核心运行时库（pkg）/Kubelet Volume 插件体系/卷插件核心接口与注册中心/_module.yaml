@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/core_volume_interfaces
+title: 卷插件核心接口与注册中心
+scope:
+    - pkg/volume/plugins.go
+    - pkg/volume/volume.go
+    - pkg/volume/noop_expandable_plugin.go
+source_files: []
+depends_on: []
+related_to: []

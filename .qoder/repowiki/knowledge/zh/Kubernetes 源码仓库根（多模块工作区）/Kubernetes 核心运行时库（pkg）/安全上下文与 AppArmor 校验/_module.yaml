@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/security_context
+title: 安全上下文与 AppArmor 校验
+scope:
+    - pkg/security/
+    - pkg/securitycontext/
+source_files: []
+depends_on: []
+related_to: []

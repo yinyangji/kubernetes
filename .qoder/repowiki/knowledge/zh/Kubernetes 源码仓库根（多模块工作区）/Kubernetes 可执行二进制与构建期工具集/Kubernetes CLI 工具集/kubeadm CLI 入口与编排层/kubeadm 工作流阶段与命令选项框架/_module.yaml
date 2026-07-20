@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: cli_and_build_tools/cli_tools/kubeadm/cmd_phases
+title: kubeadm 工作流阶段与命令选项框架
+scope:
+    - cmd/kubeadm/app/cmd/phases/
+    - cmd/kubeadm/app/cmd/options/
+    - cmd/kubeadm/app/cmd/util/
+source_files: []
+depends_on: []
+related_to:
+    - path: cli_and_build_tools/cli_tools/kubeadm/apis

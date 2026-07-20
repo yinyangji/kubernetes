@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/bootstrap_and_auth
+title: 引导与驱逐控制器（Bootstrap、TaintEviction、PodGroupProtection）
+scope:
+    - pkg/controller/bootstrap/
+    - pkg/controller/tainteviction/
+    - pkg/controller/scheduling/
+source_files: []
+depends_on: []
+related_to: []

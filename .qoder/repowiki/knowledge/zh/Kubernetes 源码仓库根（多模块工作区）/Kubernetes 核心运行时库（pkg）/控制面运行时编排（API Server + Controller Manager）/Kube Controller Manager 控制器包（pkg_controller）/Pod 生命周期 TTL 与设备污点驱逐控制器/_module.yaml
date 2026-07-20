@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/pod_lifecycle_controllers
+title: Pod 生命周期 TTL 与设备污点驱逐控制器
+scope:
+    - pkg/controller/ttl/
+    - pkg/controller/ttlafterfinished/
+    - pkg/controller/devicetainteviction/
+source_files: []
+depends_on: []
+related_to: []

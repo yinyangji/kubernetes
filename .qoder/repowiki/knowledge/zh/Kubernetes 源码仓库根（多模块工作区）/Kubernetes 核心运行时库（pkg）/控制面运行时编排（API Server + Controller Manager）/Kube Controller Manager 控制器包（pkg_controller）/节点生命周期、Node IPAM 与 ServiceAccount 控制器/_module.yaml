@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/node_management_controllers
+title: 节点生命周期、Node IPAM 与 ServiceAccount 控制器
+scope:
+    - pkg/controller/nodelifecycle/
+    - pkg/controller/nodeipam/
+    - pkg/controller/serviceaccount/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/core_api

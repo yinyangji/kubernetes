@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util/hostutil
+title: 主机文件系统与设备探测工具集
+scope:
+    - pkg/volume/util/hostutil/
+source_files: []
+depends_on: []
+related_to: []

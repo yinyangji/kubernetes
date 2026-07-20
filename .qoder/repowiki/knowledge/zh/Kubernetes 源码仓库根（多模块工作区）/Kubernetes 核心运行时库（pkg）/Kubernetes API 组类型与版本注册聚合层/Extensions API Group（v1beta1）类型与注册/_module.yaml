@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/api_types/extensions_api
+title: Extensions API Group（v1beta1）类型与注册
+scope:
+    - pkg/apis/extensions/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/core_api

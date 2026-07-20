@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/cgroup_manager
+title: Cgroup v1/v2 资源管理实现
+scope:
+    - pkg/kubelet/cm/cgroup_v1_manager_linux.go
+    - pkg/kubelet/cm/cgroup_v2_manager_linux.go
+    - pkg/kubelet/cm/util/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/resource_management/container_manager_core

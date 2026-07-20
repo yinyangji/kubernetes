@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/api_types/certificates_api
+title: certificates.k8s.io API 组类型定义与版本化
+scope:
+    - pkg/apis/certificates/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/certificate_subsystem

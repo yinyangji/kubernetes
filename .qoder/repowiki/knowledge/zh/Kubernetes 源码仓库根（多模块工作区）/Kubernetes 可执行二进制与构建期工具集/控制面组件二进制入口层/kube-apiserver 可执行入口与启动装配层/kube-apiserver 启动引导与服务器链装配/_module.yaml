@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: cli_and_build_tools/control_plane_servers/kube_apiserver/server_bootstrap
+title: kube-apiserver 启动引导与服务器链装配
+scope:
+    - cmd/kube-apiserver/app/server.go
+    - cmd/kube-apiserver/app/config.go
+    - cmd/kube-apiserver/app/aggregator.go
+source_files: []
+depends_on: []
+related_to: []

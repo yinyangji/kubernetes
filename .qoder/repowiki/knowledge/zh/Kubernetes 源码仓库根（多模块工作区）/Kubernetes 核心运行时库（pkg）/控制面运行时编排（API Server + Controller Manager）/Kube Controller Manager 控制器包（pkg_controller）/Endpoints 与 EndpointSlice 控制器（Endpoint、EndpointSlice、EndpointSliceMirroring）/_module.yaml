@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/networking_controllers
+title: Endpoints 与 EndpointSlice 控制器（Endpoint、EndpointSlice、EndpointSliceMirroring）
+scope:
+    - pkg/controller/endpoint/
+    - pkg/controller/endpointslice/
+    - pkg/controller/endpointslicemirroring/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/discovery_api

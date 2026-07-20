@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/api_types/batch_api
+title: Batch API 类型与版本化定义（Job/CronJob）
+scope:
+    - pkg/apis/batch/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/control_plane_orchestrators/controller_manager/batch_workload_controllers

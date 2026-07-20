@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/controller_manager/storage_subsystem/selinux_warning
+title: SELinux 卷冲突告警控制器
+scope:
+    - pkg/controller/volume/selinuxwarning/
+source_files: []
+depends_on: []
+related_to: []

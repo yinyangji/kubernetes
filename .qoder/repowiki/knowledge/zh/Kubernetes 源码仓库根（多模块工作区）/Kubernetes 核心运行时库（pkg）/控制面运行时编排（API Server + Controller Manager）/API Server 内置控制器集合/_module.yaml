@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/control_plane_orchestrators/control_plane_controllers
+title: API Server 内置控制器集合
+scope:
+    - pkg/controlplane/controller/
+source_files: []
+depends_on: []
+related_to: []

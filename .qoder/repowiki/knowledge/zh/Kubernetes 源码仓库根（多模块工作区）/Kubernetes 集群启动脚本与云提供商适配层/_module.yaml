@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cluster_scripts
+title: Kubernetes 集群启动脚本与云提供商适配层
+scope:
+    - cluster/
+source_files: []
+depends_on: []
+related_to: []

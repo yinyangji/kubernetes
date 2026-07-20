@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/admission_webhooks
+title: 准入 Webhook 与策略清单加载器
+scope:
+    - pkg/admission/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/admission_api
+    - path: core_runtime/api_types/admissionregistration_api

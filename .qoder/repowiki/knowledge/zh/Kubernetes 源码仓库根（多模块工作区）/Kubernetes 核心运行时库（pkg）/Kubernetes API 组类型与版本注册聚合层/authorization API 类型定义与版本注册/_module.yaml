@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: core_runtime/api_types/authorization_api
+title: authorization API 类型定义与版本注册
+scope:
+    - pkg/apis/authorization/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/abac_api
+    - path: core_runtime/auth_authorization

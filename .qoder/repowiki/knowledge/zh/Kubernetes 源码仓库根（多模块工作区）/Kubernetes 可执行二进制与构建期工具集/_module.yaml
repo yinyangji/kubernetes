@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cli_and_build_tools
+title: Kubernetes 可执行二进制与构建期工具集
+scope:
+    - cmd/
+source_files: []
+depends_on: []
+related_to: []

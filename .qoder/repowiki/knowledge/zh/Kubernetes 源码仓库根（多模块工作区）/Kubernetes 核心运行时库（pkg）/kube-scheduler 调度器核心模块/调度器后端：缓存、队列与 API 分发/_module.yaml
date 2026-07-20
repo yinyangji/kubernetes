@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/scheduler/backend
+title: 调度器后端：缓存、队列与 API 分发
+scope:
+    - pkg/scheduler/backend/
+source_files: []
+depends_on: []
+related_to: []

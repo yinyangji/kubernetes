@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/stats_reporting
+title: 节点与容器指标采集、Windows 平台统计与日志轮转
+scope:
+    - pkg/kubelet/stats/
+    - pkg/kubelet/winstats/
+    - pkg/kubelet/logs/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/kubelet_node_agent/container_runtime

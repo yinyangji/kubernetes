@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: core_runtime/registry_layer
+title: API Server 资源注册层（Registry Layer）
+scope:
+    - pkg/registry/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/api_types/admissionregistration_api
+    - path: core_runtime/api_types/apps_api
+    - path: core_runtime/api_types/core_api
+    - path: core_runtime/api_types/storage_api
+    - path: core_runtime/control_plane_orchestrators/apiserver_bootstrap

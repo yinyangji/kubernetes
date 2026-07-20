@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/allocation
+title: Pod 资源分配与原地垂直扩容管理器
+scope:
+    - pkg/kubelet/allocation/
+source_files: []
+depends_on: []
+related_to: []

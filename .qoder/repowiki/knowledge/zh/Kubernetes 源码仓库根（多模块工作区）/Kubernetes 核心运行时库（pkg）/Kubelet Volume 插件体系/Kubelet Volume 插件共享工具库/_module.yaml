@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util
+title: Kubelet Volume 插件共享工具库
+scope:
+    - pkg/volume/util/
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/csi_plugin
+    - path: core_runtime/volume_plugins/flexvolume_plugin
+    - path: core_runtime/volume_plugins/network_block_plugins
+    - path: core_runtime/volume_plugins/projected_config_plugins
+    - path: core_runtime/volume_plugins/simple_local_plugins

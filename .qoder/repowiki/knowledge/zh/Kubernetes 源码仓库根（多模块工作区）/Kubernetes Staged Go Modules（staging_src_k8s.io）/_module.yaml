@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: staged_libraries
+title: Kubernetes Staged Go Modules（staging/src/k8s.io）
+scope:
+    - staging/src/k8s.io/
+source_files: []
+depends_on: []
+related_to: []

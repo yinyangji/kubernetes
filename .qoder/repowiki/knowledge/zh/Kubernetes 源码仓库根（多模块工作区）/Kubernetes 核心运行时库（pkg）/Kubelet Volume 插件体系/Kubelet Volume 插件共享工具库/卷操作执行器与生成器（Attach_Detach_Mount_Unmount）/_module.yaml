@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/shared_util/operation_executor
+title: 卷操作执行器与生成器（Attach/Detach/Mount/Unmount）
+scope:
+    - pkg/volume/util/operationexecutor/
+source_files: []
+depends_on: []
+related_to: []

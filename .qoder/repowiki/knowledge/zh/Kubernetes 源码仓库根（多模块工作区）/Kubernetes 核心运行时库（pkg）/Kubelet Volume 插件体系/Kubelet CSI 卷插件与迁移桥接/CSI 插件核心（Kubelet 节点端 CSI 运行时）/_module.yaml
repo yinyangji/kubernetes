@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: core_runtime/volume_plugins/csi_plugin/csi_core
+title: CSI 插件核心（Kubelet 节点端 CSI 运行时）
+scope:
+    - pkg/volume/csi/csi_plugin.go
+    - pkg/volume/csi/csi_client.go
+    - pkg/volume/csi/csi_drivers_store.go
+    - pkg/volume/csi/csi_util.go
+source_files: []
+depends_on: []
+related_to:
+    - path: core_runtime/volume_plugins/csi_plugin/csi_attacher_mounter
+    - path: core_runtime/volume_plugins/csi_plugin/csi_node_infra
+    - path: core_runtime/volume_plugins/csi_plugin/csi_testing

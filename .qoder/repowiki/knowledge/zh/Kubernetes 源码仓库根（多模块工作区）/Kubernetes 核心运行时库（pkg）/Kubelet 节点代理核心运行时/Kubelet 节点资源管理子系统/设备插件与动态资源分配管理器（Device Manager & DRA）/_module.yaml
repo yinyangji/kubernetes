@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: core_runtime/kubelet_node_agent/resource_management/device_manager_and_dra
+title: 设备插件与动态资源分配管理器（Device Manager & DRA）
+scope:
+    - pkg/kubelet/cm/devicemanager/
+    - pkg/kubelet/cm/dra/
+source_files: []
+depends_on: []
+related_to: []
